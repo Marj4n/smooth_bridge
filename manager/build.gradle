@@ -1,0 +1,20 @@
+plugins {
+    id 'java'
+}
+
+version = project.mod_version
+group = project.maven_group
+
+java {
+    toolchain.languageVersion = JavaLanguageVersion.of(17)
+}
+
+tasks.withType(JavaCompile).configureEach {
+    options.release = 17
+    options.encoding = 'UTF-8'
+}
+
+jar {
+    archiveBaseName = 'smooth-bridge-manager'
+    manifest { attributes 'Main-Class': 'org.marj4n.smoothbridge.manager.BridgeManager' }
+}
