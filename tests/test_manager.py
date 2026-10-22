@@ -8,8 +8,8 @@ import unittest
 import zipfile
 
 ROOT = Path(__file__).resolve().parents[1]
-JAVA_SRC = ROOT / 'manager/src/main/java/org/marj4n/smoothbridge/manager/BridgeManager.java'
-CLI_MAIN = 'org.marj4n.smoothbridge.manager.BridgeManager'
+JAVA_SRC = ROOT / 'manager/src/main/java/org/marj4n/smooth_bridge/manager/BridgeManager.java'
+CLI_MAIN = 'org.marj4n.smooth_bridge.manager.BridgeManager'
 
 
 def forge_jar(path: Path, mod_id: str, payload: bytes = b'original'):

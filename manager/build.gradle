@@ -16,5 +16,5 @@ tasks.withType(JavaCompile).configureEach {
 
 jar {
     archiveBaseName = 'smooth-bridge-manager'
-    manifest { attributes 'Main-Class': 'org.marj4n.smoothbridge.manager.BridgeManager' }
+    manifest { attributes 'Main-Class': 'org.marj4n.smooth_bridge.manager.BridgeManager' }
 }

@@ -1,4 +1,4 @@
-package org.marj4n.smoothbridge.fabric;
+package org.marj4n.smooth_bridge.fabric;
 
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.loader.api.FabricLoader;

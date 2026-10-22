@@ -9,7 +9,7 @@
   "license": "MIT",
   "environment": "*",
   "entrypoints": {
-    "main": ["org.marj4n.smoothbridge.fabric.SmoothBridgeMod"]
+    "main": ["org.marj4n.smooth_bridge.fabric.SmoothBridgeMod"]
   },
   "depends": {
     "fabricloader": ">=0.15.0",
