@@ -1,4 +1,4 @@
-package org.marj4n.smoothbridge.manager;
+package org.marj4n.smooth_bridge.manager;
 
 import java.io.IOException;
 import java.io.InputStream;

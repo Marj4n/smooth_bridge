@@ -7,3 +7,24 @@ run/
 .tmp-*/
 *.log
 .DS_Store
+
+# Marj4n dev artifacts (safe ignore rules)
+out/
+*.ipr
+*.iws
+.vscode/
+.classpath
+.project
+.settings/
+bin/
+runs/
+logs/
+crash-reports/
+*.class
+hs_err_pid*
+replay_pid*
+Thumbs.db
+desktop.ini
+*.tmp
+*.bak
+*.swp

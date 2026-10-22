@@ -11,7 +11,7 @@ import unittest
 import zipfile
 
 ROOT = Path(__file__).resolve().parents[1]
-MOD_SRC = ROOT / 'src/main/java/org/marj4n/smoothbridge/fabric/SmoothBridgeMod.java'
+MOD_SRC = ROOT / 'src/main/java/org/marj4n/smooth_bridge/fabric/SmoothBridgeMod.java'
 
 
 class BridgeFabricRuntimeSmoke(unittest.TestCase):
@@ -39,7 +39,7 @@ public interface FabricLoader {
 }''')
             c.write_text('''package test;
 public final class Main { public static void main(String[] args) {
-  new org.marj4n.smoothbridge.fabric.SmoothBridgeMod().onInitialize();
+  new org.marj4n.smooth_bridge.fabric.SmoothBridgeMod().onInitialize();
 } }''')
             forge = game / 'mods' / 'dummy-forge-1.20.1.jar'
             with zipfile.ZipFile(forge, 'w') as z:

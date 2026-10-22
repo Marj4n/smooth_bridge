@@ -1,0 +1,19 @@
+name: Verify mod source layout
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  layout-and-tests:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
+      - name: Verify Marj4n Java/Fabric source layout
+        run: python3 scripts/check_structure.py
+      - name: Run offline manager/runtime tests
+        run: python3 -m unittest discover -s tests -v
