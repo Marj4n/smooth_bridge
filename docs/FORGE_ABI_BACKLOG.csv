@@ -1,0 +1,609 @@
+kind,Forge symbol,Referenced by,Implemented,Notes
+class,net/minecraftforge/client/event/EntityRenderersEvent,"cataclysm, netherman, skarrier_mobs",False,Requires verified equivalent in Fabric 1.20.1
+class,net/minecraftforge/client/extensions/common/IClientItemExtensions,"cataclysm, netherman, skarrier_mobs",False,Requires verified equivalent in Fabric 1.20.1
+class,net/minecraftforge/common/ForgeSpawnEggItem,"cataclysm, netherman, skarrier_mobs",False,Requires verified equivalent in Fabric 1.20.1
+class,net/minecraftforge/common/MinecraftForge,"cataclysm, netherman, skarrier_mobs",False,Requires verified equivalent in Fabric 1.20.1
+class,net/minecraftforge/event/ForgeEventFactory,"cataclysm, netherman, skarrier_mobs",False,Requires verified equivalent in Fabric 1.20.1
+class,net/minecraftforge/event/TickEvent,"cataclysm, netherman, skarrier_mobs",False,Requires verified equivalent in Fabric 1.20.1
+class,net/minecraftforge/event/TickEvent$ClientTickEvent,"cataclysm, netherman, skarrier_mobs",False,Requires verified equivalent in Fabric 1.20.1
+class,net/minecraftforge/event/TickEvent$Phase,"cataclysm, netherman, skarrier_mobs",False,Requires verified equivalent in Fabric 1.20.1
+class,net/minecraftforge/event/entity/EntityAttributeCreationEvent,"cataclysm, netherman, skarrier_mobs",False,Requires verified equivalent in Fabric 1.20.1
+class,net/minecraftforge/event/entity/living/LivingAttackEvent,"cataclysm, netherman, skarrier_mobs",False,Requires verified equivalent in Fabric 1.20.1
+class,net/minecraftforge/event/entity/living/LivingDeathEvent,"cataclysm, netherman, skarrier_mobs",False,Requires verified equivalent in Fabric 1.20.1
+class,net/minecraftforge/event/entity/living/LivingEvent,"cataclysm, netherman, skarrier_mobs",False,Requires verified equivalent in Fabric 1.20.1
+class,net/minecraftforge/event/entity/living/LivingEvent$LivingTickEvent,"cataclysm, netherman, skarrier_mobs",False,Requires verified equivalent in Fabric 1.20.1
+class,net/minecraftforge/event/entity/living/LivingHurtEvent,"cataclysm, netherman, skarrier_mobs",False,Requires verified equivalent in Fabric 1.20.1
+class,net/minecraftforge/event/entity/player/PlayerInteractEvent,"cataclysm, netherman, skarrier_mobs",False,Requires verified equivalent in Fabric 1.20.1
+class,net/minecraftforge/event/level/BlockEvent,"cataclysm, netherman, skarrier_mobs",False,Requires verified equivalent in Fabric 1.20.1
+class,net/minecraftforge/eventbus/api/IEventBus,"cataclysm, netherman, skarrier_mobs",False,Requires verified equivalent in Fabric 1.20.1
+class,net/minecraftforge/fml/common/Mod,"cataclysm, netherman, skarrier_mobs",False,Requires verified equivalent in Fabric 1.20.1
+class,net/minecraftforge/fml/common/Mod$EventBusSubscriber,"cataclysm, netherman, skarrier_mobs",False,Requires verified equivalent in Fabric 1.20.1
+class,net/minecraftforge/fml/common/Mod$EventBusSubscriber$Bus,"cataclysm, netherman, skarrier_mobs",False,Requires verified equivalent in Fabric 1.20.1
+class,net/minecraftforge/fml/event/lifecycle/FMLClientSetupEvent,"cataclysm, netherman, skarrier_mobs",False,Requires verified equivalent in Fabric 1.20.1
+class,net/minecraftforge/fml/event/lifecycle/FMLCommonSetupEvent,"cataclysm, netherman, skarrier_mobs",False,Requires verified equivalent in Fabric 1.20.1
+class,net/minecraftforge/fml/javafmlmod/FMLJavaModLoadingContext,"cataclysm, netherman, skarrier_mobs",False,Requires verified equivalent in Fabric 1.20.1
+class,net/minecraftforge/network/NetworkDirection,"cataclysm, netherman, skarrier_mobs",False,Requires verified equivalent in Fabric 1.20.1
+class,net/minecraftforge/network/NetworkEvent,"cataclysm, netherman, skarrier_mobs",False,Requires verified equivalent in Fabric 1.20.1
+class,net/minecraftforge/network/NetworkEvent$Context,"cataclysm, netherman, skarrier_mobs",False,Requires verified equivalent in Fabric 1.20.1
+class,net/minecraftforge/network/NetworkRegistry,"cataclysm, netherman, skarrier_mobs",False,Requires verified equivalent in Fabric 1.20.1
+class,net/minecraftforge/network/PacketDistributor,"cataclysm, netherman, skarrier_mobs",False,Requires verified equivalent in Fabric 1.20.1
+class,net/minecraftforge/network/PacketDistributor$PacketTarget,"cataclysm, netherman, skarrier_mobs",False,Requires verified equivalent in Fabric 1.20.1
+class,net/minecraftforge/network/simple/IndexedMessageCodec,"cataclysm, netherman, skarrier_mobs",False,Requires verified equivalent in Fabric 1.20.1
+class,net/minecraftforge/network/simple/IndexedMessageCodec$MessageHandler,"cataclysm, netherman, skarrier_mobs",False,Requires verified equivalent in Fabric 1.20.1
+class,net/minecraftforge/network/simple/SimpleChannel,"cataclysm, netherman, skarrier_mobs",False,Requires verified equivalent in Fabric 1.20.1
+class,net/minecraftforge/registries/DeferredRegister,"cataclysm, netherman, skarrier_mobs",False,Requires verified equivalent in Fabric 1.20.1
+class,net/minecraftforge/registries/ForgeRegistries,"cataclysm, netherman, skarrier_mobs",False,Requires verified equivalent in Fabric 1.20.1
+class,net/minecraftforge/registries/IForgeRegistry,"cataclysm, netherman, skarrier_mobs",False,Requires verified equivalent in Fabric 1.20.1
+class,net/minecraftforge/registries/RegistryObject,"cataclysm, netherman, skarrier_mobs",False,Requires verified equivalent in Fabric 1.20.1
+class,net/minecraftforge/client/event/CustomizeGuiOverlayEvent,"cataclysm, netherman",False,Requires verified equivalent in Fabric 1.20.1
+class,net/minecraftforge/client/event/CustomizeGuiOverlayEvent$BossEventProgress,"cataclysm, netherman",False,Requires verified equivalent in Fabric 1.20.1
+class,net/minecraftforge/client/event/EntityRenderersEvent$RegisterLayerDefinitions,"cataclysm, skarrier_mobs",False,Requires verified equivalent in Fabric 1.20.1
+class,net/minecraftforge/client/event/EntityRenderersEvent$RegisterRenderers,"netherman, skarrier_mobs",False,Requires verified equivalent in Fabric 1.20.1
+class,net/minecraftforge/client/event/MovementInputUpdateEvent,"cataclysm, netherman",False,Requires verified equivalent in Fabric 1.20.1
+class,net/minecraftforge/client/event/RegisterKeyMappingsEvent,"cataclysm, skarrier_mobs",False,Requires verified equivalent in Fabric 1.20.1
+class,net/minecraftforge/client/event/RegisterParticleProvidersEvent,"cataclysm, skarrier_mobs",False,Requires verified equivalent in Fabric 1.20.1
+class,net/minecraftforge/client/event/RenderGuiOverlayEvent,"cataclysm, netherman",False,Requires verified equivalent in Fabric 1.20.1
+class,net/minecraftforge/client/event/RenderGuiOverlayEvent$Post,"cataclysm, netherman",False,Requires verified equivalent in Fabric 1.20.1
+class,net/minecraftforge/client/event/ViewportEvent,"cataclysm, netherman",False,Requires verified equivalent in Fabric 1.20.1
+class,net/minecraftforge/client/event/ViewportEvent$ComputeCameraAngles,"cataclysm, netherman",False,Requires verified equivalent in Fabric 1.20.1
+class,net/minecraftforge/client/gui/overlay/VanillaGuiOverlay,"cataclysm, netherman",False,Requires verified equivalent in Fabric 1.20.1
+class,net/minecraftforge/common/ForgeConfigSpec,"cataclysm, netherman",False,Requires verified equivalent in Fabric 1.20.1
+class,net/minecraftforge/common/ForgeConfigSpec$BooleanValue,"cataclysm, netherman",False,Requires verified equivalent in Fabric 1.20.1
+class,net/minecraftforge/common/ForgeConfigSpec$Builder,"cataclysm, netherman",False,Requires verified equivalent in Fabric 1.20.1
+class,net/minecraftforge/common/ForgeConfigSpec$DoubleValue,"cataclysm, netherman",False,Requires verified equivalent in Fabric 1.20.1
+class,net/minecraftforge/common/ForgeConfigSpec$IntValue,"cataclysm, netherman",False,Requires verified equivalent in Fabric 1.20.1
+class,net/minecraftforge/common/ForgeMod,"cataclysm, skarrier_mobs",False,Requires verified equivalent in Fabric 1.20.1
+class,net/minecraftforge/common/ToolActions,"cataclysm, skarrier_mobs",False,Requires verified equivalent in Fabric 1.20.1
+class,net/minecraftforge/common/capabilities/CapabilityManager,"cataclysm, skarrier_mobs",False,Requires verified equivalent in Fabric 1.20.1
+class,net/minecraftforge/common/capabilities/CapabilityToken,"cataclysm, skarrier_mobs",False,Requires verified equivalent in Fabric 1.20.1
+class,net/minecraftforge/common/capabilities/ForgeCapabilities,"cataclysm, skarrier_mobs",False,Requires verified equivalent in Fabric 1.20.1
+class,net/minecraftforge/common/capabilities/ICapabilitySerializable,"cataclysm, skarrier_mobs",False,Requires verified equivalent in Fabric 1.20.1
+class,net/minecraftforge/common/capabilities/RegisterCapabilitiesEvent,"cataclysm, skarrier_mobs",False,Requires verified equivalent in Fabric 1.20.1
+class,net/minecraftforge/common/util/LazyOptional,"cataclysm, skarrier_mobs",False,Requires verified equivalent in Fabric 1.20.1
+class,net/minecraftforge/event/AttachCapabilitiesEvent,"cataclysm, skarrier_mobs",False,Requires verified equivalent in Fabric 1.20.1
+class,net/minecraftforge/event/BuildCreativeModeTabContentsEvent,"netherman, skarrier_mobs",False,Requires verified equivalent in Fabric 1.20.1
+class,net/minecraftforge/event/TickEvent$PlayerTickEvent,"netherman, skarrier_mobs",False,Requires verified equivalent in Fabric 1.20.1
+class,net/minecraftforge/event/entity/EntityTeleportEvent,"cataclysm, skarrier_mobs",False,Requires verified equivalent in Fabric 1.20.1
+class,net/minecraftforge/event/entity/EntityTeleportEvent$ChorusFruit,"cataclysm, skarrier_mobs",False,Requires verified equivalent in Fabric 1.20.1
+class,net/minecraftforge/event/entity/living/LivingChangeTargetEvent,"cataclysm, netherman",False,Requires verified equivalent in Fabric 1.20.1
+class,net/minecraftforge/event/entity/living/LivingDamageEvent,"cataclysm, netherman",False,Requires verified equivalent in Fabric 1.20.1
+class,net/minecraftforge/event/entity/living/LivingEntityUseItemEvent,"cataclysm, skarrier_mobs",False,Requires verified equivalent in Fabric 1.20.1
+class,net/minecraftforge/event/entity/living/LivingFallEvent,"cataclysm, skarrier_mobs",False,Requires verified equivalent in Fabric 1.20.1
+class,net/minecraftforge/event/entity/living/LivingHealEvent,"cataclysm, skarrier_mobs",False,Requires verified equivalent in Fabric 1.20.1
+class,net/minecraftforge/event/entity/living/ShieldBlockEvent,"cataclysm, skarrier_mobs",False,Requires verified equivalent in Fabric 1.20.1
+class,net/minecraftforge/event/entity/player/CriticalHitEvent,"cataclysm, skarrier_mobs",False,Requires verified equivalent in Fabric 1.20.1
+class,net/minecraftforge/event/entity/player/PlayerInteractEvent$EntityInteract,"cataclysm, skarrier_mobs",False,Requires verified equivalent in Fabric 1.20.1
+class,net/minecraftforge/event/entity/player/PlayerInteractEvent$LeftClickEmpty,"cataclysm, skarrier_mobs",False,Requires verified equivalent in Fabric 1.20.1
+class,net/minecraftforge/event/entity/player/PlayerInteractEvent$RightClickBlock,"cataclysm, skarrier_mobs",False,Requires verified equivalent in Fabric 1.20.1
+class,net/minecraftforge/event/entity/player/PlayerInteractEvent$RightClickEmpty,"cataclysm, netherman",False,Requires verified equivalent in Fabric 1.20.1
+class,net/minecraftforge/event/level/BlockEvent$BreakEvent,"cataclysm, skarrier_mobs",False,Requires verified equivalent in Fabric 1.20.1
+class,net/minecraftforge/event/level/BlockEvent$EntityPlaceEvent,"cataclysm, netherman",False,Requires verified equivalent in Fabric 1.20.1
+class,net/minecraftforge/eventbus/api/Event,"cataclysm, skarrier_mobs",False,Requires verified equivalent in Fabric 1.20.1
+class,net/minecraftforge/fml/DistExecutor,"cataclysm, netherman",False,Requires verified equivalent in Fabric 1.20.1
+class,net/minecraftforge/fml/LogicalSide,"cataclysm, skarrier_mobs",False,Requires verified equivalent in Fabric 1.20.1
+class,net/minecraftforge/fml/ModList,"netherman, skarrier_mobs",False,Requires verified equivalent in Fabric 1.20.1
+class,net/minecraftforge/fml/config/ModConfig,"cataclysm, netherman",False,Requires verified equivalent in Fabric 1.20.1
+class,net/minecraftforge/fml/config/ModConfig$Type,"cataclysm, netherman",False,Requires verified equivalent in Fabric 1.20.1
+class,net/minecraftforge/network/NetworkHooks,"cataclysm, skarrier_mobs",False,Requires verified equivalent in Fabric 1.20.1
+class,net/minecraftforge/network/NetworkRegistry$ChannelBuilder,"cataclysm, netherman",False,Requires verified equivalent in Fabric 1.20.1
+class,net/minecraftforge/network/PlayMessages,"cataclysm, skarrier_mobs",False,Requires verified equivalent in Fabric 1.20.1
+class,net/minecraftforge/network/PlayMessages$SpawnEntity,"cataclysm, skarrier_mobs",False,Requires verified equivalent in Fabric 1.20.1
+class,net/minecraftforge/registries/tags/ITag,"cataclysm, skarrier_mobs",False,Requires verified equivalent in Fabric 1.20.1
+class,net/minecraftforge/registries/tags/ITagManager,"cataclysm, skarrier_mobs",False,Requires verified equivalent in Fabric 1.20.1
+class,net/minecraftforge/api/distmarker/Dist,netherman,False,Requires verified equivalent in Fabric 1.20.1
+class,net/minecraftforge/client/ChunkRenderTypeSet,cataclysm,False,Requires verified equivalent in Fabric 1.20.1
+class,net/minecraftforge/client/ForgeHooksClient,cataclysm,False,Requires verified equivalent in Fabric 1.20.1
+class,net/minecraftforge/client/event/ClientPlayerNetworkEvent,netherman,False,Requires verified equivalent in Fabric 1.20.1
+class,net/minecraftforge/client/event/ClientPlayerNetworkEvent$LoggingOut,netherman,False,Requires verified equivalent in Fabric 1.20.1
+class,net/minecraftforge/client/event/EntityRenderersEvent$CreateSkullModels,cataclysm,False,Requires verified equivalent in Fabric 1.20.1
+class,net/minecraftforge/client/event/RegisterGuiOverlaysEvent,netherman,False,Requires verified equivalent in Fabric 1.20.1
+class,net/minecraftforge/client/event/RenderArmEvent,cataclysm,False,Requires verified equivalent in Fabric 1.20.1
+class,net/minecraftforge/client/event/RenderGuiOverlayEvent$Pre,cataclysm,False,Requires verified equivalent in Fabric 1.20.1
+class,net/minecraftforge/client/event/RenderLevelStageEvent,netherman,False,Requires verified equivalent in Fabric 1.20.1
+class,net/minecraftforge/client/event/RenderLevelStageEvent$Stage,netherman,False,Requires verified equivalent in Fabric 1.20.1
+class,net/minecraftforge/client/event/RenderLivingEvent,cataclysm,False,Requires verified equivalent in Fabric 1.20.1
+class,net/minecraftforge/client/event/RenderLivingEvent$Post,cataclysm,False,Requires verified equivalent in Fabric 1.20.1
+class,net/minecraftforge/client/event/RenderLivingEvent$Pre,cataclysm,False,Requires verified equivalent in Fabric 1.20.1
+class,net/minecraftforge/client/event/RenderNameTagEvent,cataclysm,False,Requires verified equivalent in Fabric 1.20.1
+class,net/minecraftforge/client/event/ViewportEvent$ComputeFogColor,netherman,False,Requires verified equivalent in Fabric 1.20.1
+class,net/minecraftforge/client/event/ViewportEvent$RenderFog,netherman,False,Requires verified equivalent in Fabric 1.20.1
+class,net/minecraftforge/client/extensions/common/IClientBlockExtensions,cataclysm,False,Requires verified equivalent in Fabric 1.20.1
+class,net/minecraftforge/client/extensions/common/IClientMobEffectExtensions,skarrier_mobs,False,Requires verified equivalent in Fabric 1.20.1
+class,net/minecraftforge/client/gui/overlay/ForgeGui,cataclysm,False,Requires verified equivalent in Fabric 1.20.1
+class,net/minecraftforge/client/gui/overlay/NamedGuiOverlay,cataclysm,False,Requires verified equivalent in Fabric 1.20.1
+class,net/minecraftforge/client/model/data/ModelData,cataclysm,False,Requires verified equivalent in Fabric 1.20.1
+class,net/minecraftforge/common/ForgeConfigSpec$ConfigValue,netherman,False,Requires verified equivalent in Fabric 1.20.1
+class,net/minecraftforge/common/ForgeHooks,cataclysm,False,Requires verified equivalent in Fabric 1.20.1
+class,net/minecraftforge/common/ForgeTier,cataclysm,False,Requires verified equivalent in Fabric 1.20.1
+class,net/minecraftforge/common/TierSortingRegistry,cataclysm,False,Requires verified equivalent in Fabric 1.20.1
+class,net/minecraftforge/common/brewing/BrewingRecipeRegistry,skarrier_mobs,False,Requires verified equivalent in Fabric 1.20.1
+class,net/minecraftforge/common/brewing/IBrewingRecipe,skarrier_mobs,False,Requires verified equivalent in Fabric 1.20.1
+class,net/minecraftforge/common/capabilities/Capability,cataclysm,False,Requires verified equivalent in Fabric 1.20.1
+class,net/minecraftforge/common/capabilities/ICapabilityProvider,cataclysm,False,Requires verified equivalent in Fabric 1.20.1
+class,net/minecraftforge/common/extensions/IForgeMenuType,skarrier_mobs,False,Requires verified equivalent in Fabric 1.20.1
+class,net/minecraftforge/common/util/FakePlayer,skarrier_mobs,False,Requires verified equivalent in Fabric 1.20.1
+class,net/minecraftforge/common/util/ForgeSoundType,netherman,False,Requires verified equivalent in Fabric 1.20.1
+class,net/minecraftforge/common/util/INBTSerializable,cataclysm,False,Requires verified equivalent in Fabric 1.20.1
+class,net/minecraftforge/common/util/Lazy,cataclysm,False,Requires verified equivalent in Fabric 1.20.1
+class,net/minecraftforge/common/world/BiomeModifier,cataclysm,False,Requires verified equivalent in Fabric 1.20.1
+class,net/minecraftforge/common/world/BiomeModifier$Phase,cataclysm,False,Requires verified equivalent in Fabric 1.20.1
+class,net/minecraftforge/common/world/MobSpawnSettingsBuilder,cataclysm,False,Requires verified equivalent in Fabric 1.20.1
+class,net/minecraftforge/common/world/ModifiableBiomeInfo,cataclysm,False,Requires verified equivalent in Fabric 1.20.1
+class,net/minecraftforge/common/world/ModifiableBiomeInfo$BiomeInfo,cataclysm,False,Requires verified equivalent in Fabric 1.20.1
+class,net/minecraftforge/common/world/ModifiableBiomeInfo$BiomeInfo$Builder,cataclysm,False,Requires verified equivalent in Fabric 1.20.1
+class,net/minecraftforge/common/world/ModifiableStructureInfo,cataclysm,False,Requires verified equivalent in Fabric 1.20.1
+class,net/minecraftforge/common/world/ModifiableStructureInfo$StructureInfo,cataclysm,False,Requires verified equivalent in Fabric 1.20.1
+class,net/minecraftforge/common/world/ModifiableStructureInfo$StructureInfo$Builder,cataclysm,False,Requires verified equivalent in Fabric 1.20.1
+class,net/minecraftforge/common/world/StructureModifier,cataclysm,False,Requires verified equivalent in Fabric 1.20.1
+class,net/minecraftforge/common/world/StructureModifier$Phase,cataclysm,False,Requires verified equivalent in Fabric 1.20.1
+class,net/minecraftforge/common/world/StructureSettingsBuilder,cataclysm,False,Requires verified equivalent in Fabric 1.20.1
+class,net/minecraftforge/common/world/StructureSettingsBuilder$StructureSpawnOverrideBuilder,cataclysm,False,Requires verified equivalent in Fabric 1.20.1
+class,net/minecraftforge/entity/IEntityAdditionalSpawnData,cataclysm,False,Requires verified equivalent in Fabric 1.20.1
+class,net/minecraftforge/entity/PartEntity,cataclysm,False,Requires verified equivalent in Fabric 1.20.1
+class,net/minecraftforge/event/ItemAttributeModifierEvent,cataclysm,False,Requires verified equivalent in Fabric 1.20.1
+class,net/minecraftforge/event/TickEvent$ServerTickEvent,skarrier_mobs,False,Requires verified equivalent in Fabric 1.20.1
+class,net/minecraftforge/event/entity/EntityAttributeModificationEvent,cataclysm,False,Requires verified equivalent in Fabric 1.20.1
+class,net/minecraftforge/event/entity/EntityJoinLevelEvent,skarrier_mobs,False,Requires verified equivalent in Fabric 1.20.1
+class,net/minecraftforge/event/entity/EntityTeleportEvent$EnderEntity,cataclysm,False,Requires verified equivalent in Fabric 1.20.1
+class,net/minecraftforge/event/entity/EntityTeleportEvent$EnderPearl,skarrier_mobs,False,Requires verified equivalent in Fabric 1.20.1
+class,net/minecraftforge/event/entity/SpawnPlacementRegisterEvent,cataclysm,False,Requires verified equivalent in Fabric 1.20.1
+class,net/minecraftforge/event/entity/SpawnPlacementRegisterEvent$Operation,cataclysm,False,Requires verified equivalent in Fabric 1.20.1
+class,net/minecraftforge/event/entity/living/LivingDropsEvent,netherman,False,Requires verified equivalent in Fabric 1.20.1
+class,net/minecraftforge/event/entity/living/LivingEntityUseItemEvent$Finish,skarrier_mobs,False,Requires verified equivalent in Fabric 1.20.1
+class,net/minecraftforge/event/entity/living/LivingEntityUseItemEvent$Start,cataclysm,False,Requires verified equivalent in Fabric 1.20.1
+class,net/minecraftforge/event/entity/living/LivingEntityUseItemEvent$Stop,cataclysm,False,Requires verified equivalent in Fabric 1.20.1
+class,net/minecraftforge/event/entity/living/LivingEntityUseItemEvent$Tick,cataclysm,False,Requires verified equivalent in Fabric 1.20.1
+class,net/minecraftforge/event/entity/living/LivingEvent$LivingJumpEvent,cataclysm,False,Requires verified equivalent in Fabric 1.20.1
+class,net/minecraftforge/event/entity/living/LivingKnockBackEvent,cataclysm,False,Requires verified equivalent in Fabric 1.20.1
+class,net/minecraftforge/event/entity/living/LivingUseTotemEvent,skarrier_mobs,False,Requires verified equivalent in Fabric 1.20.1
+class,net/minecraftforge/event/entity/living/MobEffectEvent,cataclysm,False,Requires verified equivalent in Fabric 1.20.1
+class,net/minecraftforge/event/entity/living/MobEffectEvent$Remove,cataclysm,False,Requires verified equivalent in Fabric 1.20.1
+class,net/minecraftforge/event/entity/player/AdvancementEvent,cataclysm,False,Requires verified equivalent in Fabric 1.20.1
+class,net/minecraftforge/event/entity/player/AdvancementEvent$AdvancementEarnEvent,cataclysm,False,Requires verified equivalent in Fabric 1.20.1
+class,net/minecraftforge/event/entity/player/AttackEntityEvent,cataclysm,False,Requires verified equivalent in Fabric 1.20.1
+class,net/minecraftforge/event/entity/player/FillBucketEvent,cataclysm,False,Requires verified equivalent in Fabric 1.20.1
+class,net/minecraftforge/event/entity/player/ItemTooltipEvent,skarrier_mobs,False,Requires verified equivalent in Fabric 1.20.1
+class,net/minecraftforge/event/entity/player/PlayerContainerEvent,cataclysm,False,Requires verified equivalent in Fabric 1.20.1
+class,net/minecraftforge/event/entity/player/PlayerContainerEvent$Open,cataclysm,False,Requires verified equivalent in Fabric 1.20.1
+class,net/minecraftforge/event/entity/player/PlayerEvent,skarrier_mobs,False,Requires verified equivalent in Fabric 1.20.1
+class,net/minecraftforge/event/entity/player/PlayerEvent$Clone,skarrier_mobs,False,Requires verified equivalent in Fabric 1.20.1
+class,net/minecraftforge/event/entity/player/PlayerEvent$PlayerChangedDimensionEvent,skarrier_mobs,False,Requires verified equivalent in Fabric 1.20.1
+class,net/minecraftforge/event/entity/player/PlayerEvent$PlayerLoggedInEvent,skarrier_mobs,False,Requires verified equivalent in Fabric 1.20.1
+class,net/minecraftforge/event/entity/player/PlayerEvent$PlayerRespawnEvent,skarrier_mobs,False,Requires verified equivalent in Fabric 1.20.1
+class,net/minecraftforge/event/entity/player/PlayerInteractEvent$LeftClickBlock,cataclysm,False,Requires verified equivalent in Fabric 1.20.1
+class,net/minecraftforge/event/entity/player/PlayerInteractEvent$RightClickItem,cataclysm,False,Requires verified equivalent in Fabric 1.20.1
+class,net/minecraftforge/event/entity/player/PlayerXpEvent,skarrier_mobs,False,Requires verified equivalent in Fabric 1.20.1
+class,net/minecraftforge/event/entity/player/PlayerXpEvent$PickupXp,skarrier_mobs,False,Requires verified equivalent in Fabric 1.20.1
+class,net/minecraftforge/event/level/BlockEvent$BlockToolModificationEvent,skarrier_mobs,False,Requires verified equivalent in Fabric 1.20.1
+class,net/minecraftforge/event/level/ExplosionEvent,skarrier_mobs,False,Requires verified equivalent in Fabric 1.20.1
+class,net/minecraftforge/event/level/ExplosionEvent$Detonate,skarrier_mobs,False,Requires verified equivalent in Fabric 1.20.1
+class,net/minecraftforge/event/level/LevelEvent,skarrier_mobs,False,Requires verified equivalent in Fabric 1.20.1
+class,net/minecraftforge/event/level/LevelEvent$Load,skarrier_mobs,False,Requires verified equivalent in Fabric 1.20.1
+class,net/minecraftforge/eventbus/api/Event$HasResult,cataclysm,False,Requires verified equivalent in Fabric 1.20.1
+class,net/minecraftforge/eventbus/api/Event$Result,cataclysm,False,Requires verified equivalent in Fabric 1.20.1
+class,net/minecraftforge/fluids/FluidType,cataclysm,False,Requires verified equivalent in Fabric 1.20.1
+class,net/minecraftforge/fml/ModLoadingContext,cataclysm,False,Requires verified equivalent in Fabric 1.20.1
+class,net/minecraftforge/fml/event/config/ModConfigEvent,cataclysm,False,Requires verified equivalent in Fabric 1.20.1
+class,net/minecraftforge/fml/event/config/ModConfigEvent$Loading,cataclysm,False,Requires verified equivalent in Fabric 1.20.1
+class,net/minecraftforge/fml/event/config/ModConfigEvent$Reloading,cataclysm,False,Requires verified equivalent in Fabric 1.20.1
+class,net/minecraftforge/fml/util/thread/SidedThreadGroups,skarrier_mobs,False,Requires verified equivalent in Fabric 1.20.1
+class,net/minecraftforge/items/IItemHandler,skarrier_mobs,False,Requires verified equivalent in Fabric 1.20.1
+class,net/minecraftforge/items/ItemStackHandler,skarrier_mobs,False,Requires verified equivalent in Fabric 1.20.1
+class,net/minecraftforge/items/SlotItemHandler,skarrier_mobs,False,Requires verified equivalent in Fabric 1.20.1
+class,net/minecraftforge/items/wrapper/InvWrapper,cataclysm,False,Requires verified equivalent in Fabric 1.20.1
+class,net/minecraftforge/items/wrapper/SidedInvWrapper,skarrier_mobs,False,Requires verified equivalent in Fabric 1.20.1
+class,net/minecraftforge/network/simple/SimpleChannel$MessageBuilder,netherman,False,Requires verified equivalent in Fabric 1.20.1
+class,net/minecraftforge/registries/ForgeRegistries$Keys,cataclysm,False,Requires verified equivalent in Fabric 1.20.1
+class,net/minecraftforge/server/ServerLifecycleHooks,cataclysm,False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/common/ForgeSpawnEggItem#<init>(Ljava/util/function/Supplier;IILnet/minecraft/world/item/Item$Properties;)V,"cataclysm, netherman, skarrier_mobs",False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/event/entity/EntityAttributeCreationEvent#put(Lnet/minecraft/world/entity/EntityType;Lnet/minecraft/world/entity/ai/attributes/AttributeSupplier;)V,"cataclysm, netherman, skarrier_mobs",False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/event/entity/living/LivingAttackEvent#getEntity()Lnet/minecraft/world/entity/LivingEntity;,"cataclysm, netherman, skarrier_mobs",False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/event/entity/living/LivingAttackEvent#getSource()Lnet/minecraft/world/damagesource/DamageSource;,"cataclysm, netherman, skarrier_mobs",False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/event/entity/living/LivingDeathEvent#getEntity()Lnet/minecraft/world/entity/LivingEntity;,"cataclysm, netherman, skarrier_mobs",False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/event/entity/living/LivingDeathEvent#getSource()Lnet/minecraft/world/damagesource/DamageSource;,"cataclysm, netherman, skarrier_mobs",False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/event/entity/living/LivingEvent$LivingTickEvent#getEntity()Lnet/minecraft/world/entity/LivingEntity;,"cataclysm, netherman, skarrier_mobs",False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/event/entity/living/LivingHurtEvent#getEntity()Lnet/minecraft/world/entity/LivingEntity;,"cataclysm, netherman, skarrier_mobs",False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/event/entity/living/LivingHurtEvent#getSource()Lnet/minecraft/world/damagesource/DamageSource;,"cataclysm, netherman, skarrier_mobs",False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/eventbus/api/IEventBus#register(Ljava/lang/Object;)V,"cataclysm, netherman, skarrier_mobs",False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/fml/event/lifecycle/FMLClientSetupEvent#enqueueWork(Ljava/lang/Runnable;)Ljava/util/concurrent/CompletableFuture;,"cataclysm, netherman, skarrier_mobs",False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/fml/event/lifecycle/FMLCommonSetupEvent#enqueueWork(Ljava/lang/Runnable;)Ljava/util/concurrent/CompletableFuture;,"cataclysm, netherman, skarrier_mobs",False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/fml/javafmlmod/FMLJavaModLoadingContext#getModEventBus()Lnet/minecraftforge/eventbus/api/IEventBus;,"cataclysm, netherman, skarrier_mobs",False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/network/NetworkEvent$Context#enqueueWork(Ljava/lang/Runnable;)Ljava/util/concurrent/CompletableFuture;,"cataclysm, netherman, skarrier_mobs",False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/network/NetworkEvent$Context#getSender()Lnet/minecraft/server/level/ServerPlayer;,"cataclysm, netherman, skarrier_mobs",False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/network/NetworkEvent$Context#setPacketHandled(Z)V,"cataclysm, netherman, skarrier_mobs",False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/network/PacketDistributor#with(Ljava/util/function/Supplier;)Lnet/minecraftforge/network/PacketDistributor$PacketTarget;,"cataclysm, netherman, skarrier_mobs",False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/network/simple/SimpleChannel#registerMessage(ILjava/lang/Class;Ljava/util/function/BiConsumer;Ljava/util/function/Function;Ljava/util/function/BiConsumer;)Lnet/minecraftforge/network/simple/IndexedMessageCodec$MessageHandler;,"cataclysm, netherman, skarrier_mobs",False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/network/simple/SimpleChannel#send(Lnet/minecraftforge/network/PacketDistributor$PacketTarget;Ljava/lang/Object;)V,"cataclysm, netherman, skarrier_mobs",False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/network/simple/SimpleChannel#sendToServer(Ljava/lang/Object;)V,"cataclysm, netherman, skarrier_mobs",False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/registries/DeferredRegister#create(Lnet/minecraft/resources/ResourceKey;Ljava/lang/String;)Lnet/minecraftforge/registries/DeferredRegister;,"cataclysm, netherman, skarrier_mobs",False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/registries/DeferredRegister#create(Lnet/minecraftforge/registries/IForgeRegistry;Ljava/lang/String;)Lnet/minecraftforge/registries/DeferredRegister;,"cataclysm, netherman, skarrier_mobs",False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/registries/DeferredRegister#register(Ljava/lang/String;Ljava/util/function/Supplier;)Lnet/minecraftforge/registries/RegistryObject;,"cataclysm, netherman, skarrier_mobs",False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/registries/DeferredRegister#register(Lnet/minecraftforge/eventbus/api/IEventBus;)V,"cataclysm, netherman, skarrier_mobs",False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/registries/RegistryObject#get()Ljava/lang/Object;,"cataclysm, netherman, skarrier_mobs",False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/client/event/CustomizeGuiOverlayEvent$BossEventProgress#getBossEvent()Lnet/minecraft/client/gui/components/LerpingBossEvent;,"cataclysm, netherman",False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/client/event/CustomizeGuiOverlayEvent$BossEventProgress#getGuiGraphics()Lnet/minecraft/client/gui/GuiGraphics;,"cataclysm, netherman",False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/client/event/CustomizeGuiOverlayEvent$BossEventProgress#getY()I,"cataclysm, netherman",False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/client/event/CustomizeGuiOverlayEvent$BossEventProgress#setCanceled(Z)V,"cataclysm, netherman",False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/client/event/CustomizeGuiOverlayEvent$BossEventProgress#setIncrement(I)V,"cataclysm, netherman",False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/client/event/EntityRenderersEvent$RegisterLayerDefinitions#registerLayerDefinition(Lnet/minecraft/client/model/geom/ModelLayerLocation;Ljava/util/function/Supplier;)V,"cataclysm, skarrier_mobs",False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/client/event/EntityRenderersEvent$RegisterRenderers#registerEntityRenderer(Lnet/minecraft/world/entity/EntityType;Lnet/minecraft/client/renderer/entity/EntityRendererProvider;)V,"netherman, skarrier_mobs",False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/client/event/MovementInputUpdateEvent#getInput()Lnet/minecraft/client/player/Input;,"cataclysm, netherman",False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/client/event/RegisterKeyMappingsEvent#register(Lnet/minecraft/client/KeyMapping;)V,"cataclysm, skarrier_mobs",False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/client/event/RegisterParticleProvidersEvent#registerSpriteSet(Lnet/minecraft/core/particles/ParticleType;Lnet/minecraft/client/particle/ParticleEngine$SpriteParticleRegistration;)V,"cataclysm, skarrier_mobs",False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/client/event/ViewportEvent$ComputeCameraAngles#getPitch()F,"cataclysm, netherman",False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/client/event/ViewportEvent$ComputeCameraAngles#getRoll()F,"cataclysm, netherman",False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/client/event/ViewportEvent$ComputeCameraAngles#getYaw()F,"cataclysm, netherman",False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/client/event/ViewportEvent$ComputeCameraAngles#setPitch(F)V,"cataclysm, netherman",False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/client/event/ViewportEvent$ComputeCameraAngles#setRoll(F)V,"cataclysm, netherman",False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/client/event/ViewportEvent$ComputeCameraAngles#setYaw(F)V,"cataclysm, netherman",False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/client/gui/overlay/VanillaGuiOverlay#type()Lnet/minecraftforge/client/gui/overlay/NamedGuiOverlay;,"cataclysm, netherman",False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/common/ForgeConfigSpec$BooleanValue#get()Ljava/lang/Object;,"cataclysm, netherman",False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/common/ForgeConfigSpec$Builder#<init>()V,"cataclysm, netherman",False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/common/ForgeConfigSpec$Builder#comment(Ljava/lang/String;)Lnet/minecraftforge/common/ForgeConfigSpec$Builder;,"cataclysm, netherman",False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/common/ForgeConfigSpec$Builder#define(Ljava/lang/String;Z)Lnet/minecraftforge/common/ForgeConfigSpec$BooleanValue;,"cataclysm, netherman",False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/common/ForgeConfigSpec$Builder#defineInRange(Ljava/lang/String;DDD)Lnet/minecraftforge/common/ForgeConfigSpec$DoubleValue;,"cataclysm, netherman",False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/common/ForgeConfigSpec$Builder#defineInRange(Ljava/lang/String;III)Lnet/minecraftforge/common/ForgeConfigSpec$IntValue;,"cataclysm, netherman",False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/common/ForgeConfigSpec$Builder#pop()Lnet/minecraftforge/common/ForgeConfigSpec$Builder;,"cataclysm, netherman",False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/common/ForgeConfigSpec$Builder#push(Ljava/lang/String;)Lnet/minecraftforge/common/ForgeConfigSpec$Builder;,"cataclysm, netherman",False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/common/ForgeConfigSpec$DoubleValue#get()Ljava/lang/Object;,"cataclysm, netherman",False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/common/ForgeConfigSpec$IntValue#get()Ljava/lang/Object;,"cataclysm, netherman",False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/common/capabilities/CapabilityManager#get(Lnet/minecraftforge/common/capabilities/CapabilityToken;)Lnet/minecraftforge/common/capabilities/Capability;,"cataclysm, skarrier_mobs",False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/common/capabilities/CapabilityToken#<init>()V,"cataclysm, skarrier_mobs",False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/common/capabilities/RegisterCapabilitiesEvent#register(Ljava/lang/Class;)V,"cataclysm, skarrier_mobs",False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/common/util/LazyOptional#cast()Lnet/minecraftforge/common/util/LazyOptional;,"cataclysm, skarrier_mobs",False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/common/util/LazyOptional#ifPresent(Lnet/minecraftforge/common/util/NonNullConsumer;)V,"cataclysm, skarrier_mobs",False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/common/util/LazyOptional#invalidate()V,"cataclysm, skarrier_mobs",False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/common/util/LazyOptional#of(Lnet/minecraftforge/common/util/NonNullSupplier;)Lnet/minecraftforge/common/util/LazyOptional;,"cataclysm, skarrier_mobs",False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/event/AttachCapabilitiesEvent#addCapability(Lnet/minecraft/resources/ResourceLocation;Lnet/minecraftforge/common/capabilities/ICapabilityProvider;)V,"cataclysm, skarrier_mobs",False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/event/AttachCapabilitiesEvent#getObject()Ljava/lang/Object;,"cataclysm, skarrier_mobs",False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/event/BuildCreativeModeTabContentsEvent#getTabKey()Lnet/minecraft/resources/ResourceKey;,"netherman, skarrier_mobs",False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/event/ForgeEventFactory#getMobGriefingEvent(Lnet/minecraft/world/level/Level;Lnet/minecraft/world/entity/Entity;)Z,"cataclysm, netherman",False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/event/ForgeEventFactory#onAnimalTame(Lnet/minecraft/world/entity/animal/Animal;Lnet/minecraft/world/entity/player/Player;)Z,"cataclysm, skarrier_mobs",False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/event/entity/living/LivingAttackEvent#setCanceled(Z)V,"cataclysm, netherman",False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/event/entity/living/LivingChangeTargetEvent#getEntity()Lnet/minecraft/world/entity/LivingEntity;,"cataclysm, netherman",False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/event/entity/living/LivingChangeTargetEvent#getNewTarget()Lnet/minecraft/world/entity/LivingEntity;,"cataclysm, netherman",False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/event/entity/living/LivingChangeTargetEvent#setCanceled(Z)V,"cataclysm, netherman",False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/event/entity/living/LivingDamageEvent#getAmount()F,"cataclysm, netherman",False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/event/entity/living/LivingDamageEvent#getEntity()Lnet/minecraft/world/entity/LivingEntity;,"cataclysm, netherman",False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/event/entity/living/LivingDamageEvent#getSource()Lnet/minecraft/world/damagesource/DamageSource;,"cataclysm, netherman",False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/event/entity/living/LivingDeathEvent#setCanceled(Z)V,"cataclysm, netherman",False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/event/entity/living/LivingFallEvent#getDistance()F,"cataclysm, skarrier_mobs",False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/event/entity/living/LivingFallEvent#getEntity()Lnet/minecraft/world/entity/LivingEntity;,"cataclysm, skarrier_mobs",False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/event/entity/living/LivingHealEvent#getEntity()Lnet/minecraft/world/entity/LivingEntity;,"cataclysm, skarrier_mobs",False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/event/entity/living/LivingHurtEvent#getAmount()F,"netherman, skarrier_mobs",False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/event/entity/living/LivingHurtEvent#setAmount(F)V,"netherman, skarrier_mobs",False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/event/entity/living/ShieldBlockEvent#getDamageSource()Lnet/minecraft/world/damagesource/DamageSource;,"cataclysm, skarrier_mobs",False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/event/entity/living/ShieldBlockEvent#getEntity()Lnet/minecraft/world/entity/LivingEntity;,"cataclysm, skarrier_mobs",False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/event/entity/player/CriticalHitEvent#getEntity()Lnet/minecraft/world/entity/player/Player;,"cataclysm, skarrier_mobs",False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/event/entity/player/CriticalHitEvent#getTarget()Lnet/minecraft/world/entity/Entity;,"cataclysm, skarrier_mobs",False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/event/entity/player/CriticalHitEvent#isVanillaCritical()Z,"cataclysm, skarrier_mobs",False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/event/entity/player/PlayerInteractEvent$EntityInteract#getEntity()Lnet/minecraft/world/entity/player/Player;,"cataclysm, skarrier_mobs",False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/event/entity/player/PlayerInteractEvent$LeftClickEmpty#getEntity()Lnet/minecraft/world/entity/player/Player;,"cataclysm, skarrier_mobs",False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/event/entity/player/PlayerInteractEvent$LeftClickEmpty#getLevel()Lnet/minecraft/world/level/Level;,"cataclysm, skarrier_mobs",False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/event/entity/player/PlayerInteractEvent$RightClickBlock#getEntity()Lnet/minecraft/world/entity/player/Player;,"cataclysm, skarrier_mobs",False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/event/entity/player/PlayerInteractEvent$RightClickEmpty#getEntity()Lnet/minecraft/world/entity/player/Player;,"cataclysm, netherman",False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/event/level/BlockEvent$BreakEvent#getPlayer()Lnet/minecraft/world/entity/player/Player;,"cataclysm, skarrier_mobs",False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/event/level/BlockEvent$EntityPlaceEvent#getEntity()Lnet/minecraft/world/entity/Entity;,"cataclysm, netherman",False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/eventbus/api/IEventBus#addListener(Ljava/util/function/Consumer;)V,"cataclysm, netherman",False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/fml/ModList#get()Lnet/minecraftforge/fml/ModList;,"netherman, skarrier_mobs",False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/fml/ModList#isLoaded(Ljava/lang/String;)Z,"netherman, skarrier_mobs",False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/fml/javafmlmod/FMLJavaModLoadingContext#get()Lnet/minecraftforge/fml/javafmlmod/FMLJavaModLoadingContext;,"cataclysm, skarrier_mobs",False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/network/NetworkDirection#getReceptionSide()Lnet/minecraftforge/fml/LogicalSide;,"cataclysm, skarrier_mobs",False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/network/NetworkEvent$Context#getDirection()Lnet/minecraftforge/network/NetworkDirection;,"cataclysm, skarrier_mobs",False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/network/NetworkHooks#getEntitySpawningPacket(Lnet/minecraft/world/entity/Entity;)Lnet/minecraft/network/protocol/Packet;,"cataclysm, skarrier_mobs",False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/network/NetworkRegistry$ChannelBuilder#clientAcceptedVersions(Ljava/util/function/Predicate;)Lnet/minecraftforge/network/NetworkRegistry$ChannelBuilder;,"cataclysm, netherman",False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/network/NetworkRegistry$ChannelBuilder#named(Lnet/minecraft/resources/ResourceLocation;)Lnet/minecraftforge/network/NetworkRegistry$ChannelBuilder;,"cataclysm, netherman",False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/network/NetworkRegistry$ChannelBuilder#networkProtocolVersion(Ljava/util/function/Supplier;)Lnet/minecraftforge/network/NetworkRegistry$ChannelBuilder;,"cataclysm, netherman",False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/network/NetworkRegistry$ChannelBuilder#serverAcceptedVersions(Ljava/util/function/Predicate;)Lnet/minecraftforge/network/NetworkRegistry$ChannelBuilder;,"cataclysm, netherman",False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/network/NetworkRegistry$ChannelBuilder#simpleChannel()Lnet/minecraftforge/network/simple/SimpleChannel;,"cataclysm, netherman",False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/registries/DeferredRegister#getEntries()Ljava/util/Collection;,"cataclysm, netherman",False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/registries/IForgeRegistry#getKey(Ljava/lang/Object;)Lnet/minecraft/resources/ResourceLocation;,"cataclysm, netherman",False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/registries/IForgeRegistry#getValue(Lnet/minecraft/resources/ResourceLocation;)Ljava/lang/Object;,"cataclysm, skarrier_mobs",False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/registries/IForgeRegistry#tags()Lnet/minecraftforge/registries/tags/ITagManager;,"cataclysm, skarrier_mobs",False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/registries/tags/ITagManager#getTag(Lnet/minecraft/tags/TagKey;)Lnet/minecraftforge/registries/tags/ITag;,"cataclysm, skarrier_mobs",False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/client/ChunkRenderTypeSet#iterator()Ljava/util/Iterator;,cataclysm,False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/client/ForgeHooksClient#getArmorModel(Lnet/minecraft/world/entity/LivingEntity;Lnet/minecraft/world/item/ItemStack;Lnet/minecraft/world/entity/EquipmentSlot;Lnet/minecraft/client/model/HumanoidModel;)Lnet/minecraft/client/model/Model;,cataclysm,False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/client/ForgeHooksClient#getArmorTexture(Lnet/minecraft/world/entity/Entity;Lnet/minecraft/world/item/ItemStack;Ljava/lang/String;Lnet/minecraft/world/entity/EquipmentSlot;Ljava/lang/String;)Ljava/lang/String;,cataclysm,False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/client/event/CustomizeGuiOverlayEvent$BossEventProgress#getX()I,cataclysm,False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/client/event/EntityRenderersEvent$CreateSkullModels#getEntityModelSet()Lnet/minecraft/client/model/geom/EntityModelSet;,cataclysm,False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/client/event/EntityRenderersEvent$CreateSkullModels#registerSkullModel(Lnet/minecraft/world/level/block/SkullBlock$Type;Lnet/minecraft/client/model/SkullModelBase;)V,cataclysm,False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/client/event/EntityRenderersEvent$RegisterRenderers#registerBlockEntityRenderer(Lnet/minecraft/world/level/block/entity/BlockEntityType;Lnet/minecraft/client/renderer/blockentity/BlockEntityRendererProvider;)V,netherman,False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/client/event/RegisterGuiOverlaysEvent#registerAboveAll(Ljava/lang/String;Lnet/minecraftforge/client/gui/overlay/IGuiOverlay;)V,netherman,False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/client/event/RegisterParticleProvidersEvent#registerSpecial(Lnet/minecraft/core/particles/ParticleType;Lnet/minecraft/client/particle/ParticleProvider;)V,cataclysm,False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/client/event/RenderArmEvent#getArm()Lnet/minecraft/world/entity/HumanoidArm;,cataclysm,False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/client/event/RenderArmEvent#getMultiBufferSource()Lnet/minecraft/client/renderer/MultiBufferSource;,cataclysm,False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/client/event/RenderArmEvent#getPackedLight()I,cataclysm,False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/client/event/RenderArmEvent#getPlayer()Lnet/minecraft/client/player/AbstractClientPlayer;,cataclysm,False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/client/event/RenderArmEvent#getPoseStack()Lcom/mojang/blaze3d/vertex/PoseStack;,cataclysm,False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/client/event/RenderGuiOverlayEvent$Post#getGuiGraphics()Lnet/minecraft/client/gui/GuiGraphics;,netherman,False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/client/event/RenderGuiOverlayEvent$Post#getOverlay()Lnet/minecraftforge/client/gui/overlay/NamedGuiOverlay;,netherman,False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/client/event/RenderGuiOverlayEvent$Pre#getGuiGraphics()Lnet/minecraft/client/gui/GuiGraphics;,cataclysm,False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/client/event/RenderGuiOverlayEvent$Pre#getOverlay()Lnet/minecraftforge/client/gui/overlay/NamedGuiOverlay;,cataclysm,False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/client/event/RenderGuiOverlayEvent$Pre#getWindow()Lcom/mojang/blaze3d/platform/Window;,cataclysm,False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/client/event/RenderGuiOverlayEvent$Pre#setCanceled(Z)V,cataclysm,False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/client/event/RenderLevelStageEvent#getCamera()Lnet/minecraft/client/Camera;,netherman,False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/client/event/RenderLevelStageEvent#getPartialTick()F,netherman,False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/client/event/RenderLevelStageEvent#getPoseStack()Lcom/mojang/blaze3d/vertex/PoseStack;,netherman,False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/client/event/RenderLevelStageEvent#getStage()Lnet/minecraftforge/client/event/RenderLevelStageEvent$Stage;,netherman,False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/client/event/RenderLivingEvent$Post#<init>(Lnet/minecraft/world/entity/LivingEntity;Lnet/minecraft/client/renderer/entity/LivingEntityRenderer;FLcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/renderer/MultiBufferSource;I)V,cataclysm,False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/client/event/RenderLivingEvent$Pre#<init>(Lnet/minecraft/world/entity/LivingEntity;Lnet/minecraft/client/renderer/entity/LivingEntityRenderer;FLcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/renderer/MultiBufferSource;I)V,cataclysm,False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/client/event/RenderLivingEvent$Pre#getEntity()Lnet/minecraft/world/entity/LivingEntity;,cataclysm,False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/client/event/RenderLivingEvent$Pre#getMultiBufferSource()Lnet/minecraft/client/renderer/MultiBufferSource;,cataclysm,False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/client/event/RenderLivingEvent$Pre#getPackedLight()I,cataclysm,False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/client/event/RenderLivingEvent$Pre#getPartialTick()F,cataclysm,False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/client/event/RenderLivingEvent$Pre#getPoseStack()Lcom/mojang/blaze3d/vertex/PoseStack;,cataclysm,False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/client/event/RenderLivingEvent$Pre#getRenderer()Lnet/minecraft/client/renderer/entity/LivingEntityRenderer;,cataclysm,False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/client/event/RenderLivingEvent$Pre#setCanceled(Z)V,cataclysm,False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/client/event/RenderNameTagEvent#<init>(Lnet/minecraft/world/entity/Entity;Lnet/minecraft/network/chat/Component;Lnet/minecraft/client/renderer/entity/EntityRenderer;Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/renderer/MultiBufferSource;IF)V,cataclysm,False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/client/event/RenderNameTagEvent#getContent()Lnet/minecraft/network/chat/Component;,cataclysm,False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/client/event/RenderNameTagEvent#getResult()Lnet/minecraftforge/eventbus/api/Event$Result;,cataclysm,False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/client/event/ViewportEvent$ComputeCameraAngles#getCamera()Lnet/minecraft/client/Camera;,cataclysm,False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/client/event/ViewportEvent$ComputeFogColor#getBlue()F,netherman,False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/client/event/ViewportEvent$ComputeFogColor#getGreen()F,netherman,False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/client/event/ViewportEvent$ComputeFogColor#getRed()F,netherman,False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/client/event/ViewportEvent$ComputeFogColor#setBlue(F)V,netherman,False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/client/event/ViewportEvent$ComputeFogColor#setGreen(F)V,netherman,False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/client/event/ViewportEvent$ComputeFogColor#setRed(F)V,netherman,False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/client/event/ViewportEvent$RenderFog#getFarPlaneDistance()F,netherman,False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/client/event/ViewportEvent$RenderFog#getNearPlaneDistance()F,netherman,False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/client/event/ViewportEvent$RenderFog#setCanceled(Z)V,netherman,False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/client/event/ViewportEvent$RenderFog#setFarPlaneDistance(F)V,netherman,False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/client/event/ViewportEvent$RenderFog#setNearPlaneDistance(F)V,netherman,False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/client/extensions/common/IClientBlockExtensions#areBreakingParticlesTinted(Lnet/minecraft/world/level/block/state/BlockState;Lnet/minecraft/client/multiplayer/ClientLevel;Lnet/minecraft/core/BlockPos;)Z,cataclysm,False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/client/extensions/common/IClientBlockExtensions#of(Lnet/minecraft/world/level/block/state/BlockState;)Lnet/minecraftforge/client/extensions/common/IClientBlockExtensions;,cataclysm,False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/client/gui/overlay/ForgeGui#m_93079_()I,cataclysm,False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/client/gui/overlay/ForgeGui#setupOverlayRenderState(ZZ)V,cataclysm,False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/client/gui/overlay/ForgeGui#shouldDrawSurvivalElements()Z,cataclysm,False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/client/gui/overlay/NamedGuiOverlay#id()Lnet/minecraft/resources/ResourceLocation;,cataclysm,False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/client/gui/overlay/VanillaGuiOverlay#id()Lnet/minecraft/resources/ResourceLocation;,cataclysm,False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/common/ForgeConfigSpec#isLoaded()Z,cataclysm,False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/common/ForgeConfigSpec$Builder#build()Lnet/minecraftforge/common/ForgeConfigSpec;,netherman,False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/common/ForgeConfigSpec$Builder#configure(Ljava/util/function/Function;)Lorg/apache/commons/lang3/tuple/Pair;,cataclysm,False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/common/ForgeConfigSpec$Builder#defineListAllowEmpty(Ljava/util/List;Ljava/util/function/Supplier;Ljava/util/function/Predicate;)Lnet/minecraftforge/common/ForgeConfigSpec$ConfigValue;,netherman,False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/common/ForgeConfigSpec$Builder#translation(Ljava/lang/String;)Lnet/minecraftforge/common/ForgeConfigSpec$Builder;,cataclysm,False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/common/ForgeConfigSpec$ConfigValue#get()Ljava/lang/Object;,netherman,False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/common/ForgeHooks#hasNoElements(Lnet/minecraft/world/item/crafting/Ingredient;)Z,cataclysm,False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/common/ForgeHooks#onLivingDeath(Lnet/minecraft/world/entity/LivingEntity;Lnet/minecraft/world/damagesource/DamageSource;)Z,cataclysm,False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/common/ForgeTier#<init>(IIFFILnet/minecraft/tags/TagKey;Ljava/util/function/Supplier;)V,cataclysm,False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/common/TierSortingRegistry#registerTier(Lnet/minecraft/world/item/Tier;Lnet/minecraft/resources/ResourceLocation;Ljava/util/List;Ljava/util/List;)Lnet/minecraft/world/item/Tier;,cataclysm,False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/common/brewing/BrewingRecipeRegistry#addRecipe(Lnet/minecraftforge/common/brewing/IBrewingRecipe;)Z,skarrier_mobs,False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/common/capabilities/Capability#orEmpty(Lnet/minecraftforge/common/capabilities/Capability;Lnet/minecraftforge/common/util/LazyOptional;)Lnet/minecraftforge/common/util/LazyOptional;,cataclysm,False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/common/extensions/IForgeMenuType#create(Lnet/minecraftforge/network/IContainerFactory;)Lnet/minecraft/world/inventory/MenuType;,skarrier_mobs,False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/common/util/ForgeSoundType#<init>(FFLjava/util/function/Supplier;Ljava/util/function/Supplier;Ljava/util/function/Supplier;Ljava/util/function/Supplier;Ljava/util/function/Supplier;)V,netherman,False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/common/util/Lazy#get()Ljava/lang/Object;,cataclysm,False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/common/util/Lazy#of(Ljava/util/function/Supplier;)Lnet/minecraftforge/common/util/Lazy;,cataclysm,False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/common/util/LazyOptional#empty()Lnet/minecraftforge/common/util/LazyOptional;,skarrier_mobs,False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/common/util/LazyOptional#isPresent()Z,cataclysm,False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/common/util/LazyOptional#map(Lnet/minecraftforge/common/util/NonNullFunction;)Ljava/util/Optional;,cataclysm,False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/common/util/LazyOptional#orElse(Ljava/lang/Object;)Ljava/lang/Object;,skarrier_mobs,False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/common/util/LazyOptional#orElseThrow(Lnet/minecraftforge/common/util/NonNullSupplier;)Ljava/lang/Object;,cataclysm,False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/common/world/MobSpawnSettingsBuilder#getSpawner(Lnet/minecraft/world/entity/MobCategory;)Ljava/util/List;,cataclysm,False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/common/world/ModifiableBiomeInfo$BiomeInfo$Builder#getMobSpawnSettings()Lnet/minecraftforge/common/world/MobSpawnSettingsBuilder;,cataclysm,False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/common/world/ModifiableStructureInfo$StructureInfo$Builder#getStructureSettings()Lnet/minecraftforge/common/world/StructureSettingsBuilder;,cataclysm,False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/common/world/StructureSettingsBuilder#getOrAddSpawnOverrides(Lnet/minecraft/world/entity/MobCategory;)Lnet/minecraftforge/common/world/StructureSettingsBuilder$StructureSpawnOverrideBuilder;,cataclysm,False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/common/world/StructureSettingsBuilder$StructureSpawnOverrideBuilder#addSpawn(Lnet/minecraft/world/level/biome/MobSpawnSettings$SpawnerData;)V,cataclysm,False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/entity/PartEntity#<init>(Lnet/minecraft/world/entity/Entity;)V,cataclysm,False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/entity/PartEntity#m_20234_(I)V,cataclysm,False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/entity/PartEntity#m_8119_()V,cataclysm,False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/event/BuildCreativeModeTabContentsEvent#accept(Ljava/util/function/Supplier;)V,netherman,False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/event/BuildCreativeModeTabContentsEvent#m_246326_(Lnet/minecraft/world/level/ItemLike;)V,skarrier_mobs,False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/event/ForgeEventFactory#onArrowLoose(Lnet/minecraft/world/item/ItemStack;Lnet/minecraft/world/level/Level;Lnet/minecraft/world/entity/player/Player;IZ)I,cataclysm,False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/event/ForgeEventFactory#onArrowNock(Lnet/minecraft/world/item/ItemStack;Lnet/minecraft/world/level/Level;Lnet/minecraft/world/entity/player/Player;Lnet/minecraft/world/InteractionHand;Z)Lnet/minecraft/world/InteractionResultHolder;,cataclysm,False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/event/ForgeEventFactory#onChorusFruitTeleport(Lnet/minecraft/world/entity/LivingEntity;DDD)Lnet/minecraftforge/event/entity/EntityTeleportEvent$ChorusFruit;,cataclysm,False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/event/ForgeEventFactory#onEnderTeleport(Lnet/minecraft/world/entity/LivingEntity;DDD)Lnet/minecraftforge/event/entity/EntityTeleportEvent$EnderEntity;,cataclysm,False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/event/ForgeEventFactory#onEntityDestroyBlock(Lnet/minecraft/world/entity/LivingEntity;Lnet/minecraft/core/BlockPos;Lnet/minecraft/world/level/block/state/BlockState;)Z,cataclysm,False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/event/ForgeEventFactory#onExplosionDetonate(Lnet/minecraft/world/level/Level;Lnet/minecraft/world/level/Explosion;Ljava/util/List;D)V,cataclysm,False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/event/ForgeEventFactory#onProjectileImpact(Lnet/minecraft/world/entity/projectile/Projectile;Lnet/minecraft/world/phys/HitResult;)Z,cataclysm,False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/event/ItemAttributeModifierEvent#addModifier(Lnet/minecraft/world/entity/ai/attributes/Attribute;Lnet/minecraft/world/entity/ai/attributes/AttributeModifier;)Z,cataclysm,False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/event/ItemAttributeModifierEvent#getItemStack()Lnet/minecraft/world/item/ItemStack;,cataclysm,False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/event/ItemAttributeModifierEvent#getModifiers()Lcom/google/common/collect/Multimap;,cataclysm,False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/event/ItemAttributeModifierEvent#getSlotType()Lnet/minecraft/world/entity/EquipmentSlot;,cataclysm,False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/event/ItemAttributeModifierEvent#removeModifier(Lnet/minecraft/world/entity/ai/attributes/Attribute;Lnet/minecraft/world/entity/ai/attributes/AttributeModifier;)Z,cataclysm,False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/event/entity/EntityAttributeModificationEvent#add(Lnet/minecraft/world/entity/EntityType;Lnet/minecraft/world/entity/ai/attributes/Attribute;)V,cataclysm,False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/event/entity/EntityAttributeModificationEvent#getTypes()Ljava/util/List;,cataclysm,False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/event/entity/EntityAttributeModificationEvent#has(Lnet/minecraft/world/entity/EntityType;Lnet/minecraft/world/entity/ai/attributes/Attribute;)Z,cataclysm,False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/event/entity/EntityJoinLevelEvent#getEntity()Lnet/minecraft/world/entity/Entity;,skarrier_mobs,False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/event/entity/EntityTeleportEvent$ChorusFruit#getEntityLiving()Lnet/minecraft/world/entity/LivingEntity;,skarrier_mobs,False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/event/entity/EntityTeleportEvent$ChorusFruit#getTargetX()D,cataclysm,False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/event/entity/EntityTeleportEvent$ChorusFruit#getTargetY()D,cataclysm,False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/event/entity/EntityTeleportEvent$ChorusFruit#getTargetZ()D,cataclysm,False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/event/entity/EntityTeleportEvent$EnderEntity#getTargetX()D,cataclysm,False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/event/entity/EntityTeleportEvent$EnderEntity#getTargetY()D,cataclysm,False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/event/entity/EntityTeleportEvent$EnderEntity#getTargetZ()D,cataclysm,False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/event/entity/EntityTeleportEvent$EnderEntity#isCanceled()Z,cataclysm,False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/event/entity/EntityTeleportEvent$EnderPearl#getPlayer()Lnet/minecraft/server/level/ServerPlayer;,skarrier_mobs,False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/event/entity/SpawnPlacementRegisterEvent#register(Lnet/minecraft/world/entity/EntityType;Lnet/minecraft/world/entity/SpawnPlacements$Type;Lnet/minecraft/world/level/levelgen/Heightmap$Types;Lnet/minecraft/world/entity/SpawnPlacements$SpawnPredicate;Lnet/minecraftforge/event/entity/SpawnPlacementRegisterEvent$Operation;)V,cataclysm,False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/event/entity/living/LivingAttackEvent#getAmount()F,skarrier_mobs,False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/event/entity/living/LivingChangeTargetEvent#setNewTarget(Lnet/minecraft/world/entity/LivingEntity;)V,netherman,False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/event/entity/living/LivingDamageEvent#setAmount(F)V,cataclysm,False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/event/entity/living/LivingDamageEvent#setCanceled(Z)V,netherman,False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/event/entity/living/LivingDropsEvent#getDrops()Ljava/util/Collection;,netherman,False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/event/entity/living/LivingDropsEvent#getEntity()Lnet/minecraft/world/entity/LivingEntity;,netherman,False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/event/entity/living/LivingDropsEvent#getSource()Lnet/minecraft/world/damagesource/DamageSource;,netherman,False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/event/entity/living/LivingEntityUseItemEvent#getEntity()Lnet/minecraft/world/entity/LivingEntity;,cataclysm,False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/event/entity/living/LivingEntityUseItemEvent#isCancelable()Z,cataclysm,False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/event/entity/living/LivingEntityUseItemEvent#setCanceled(Z)V,cataclysm,False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/event/entity/living/LivingEntityUseItemEvent$Finish#getEntity()Lnet/minecraft/world/entity/LivingEntity;,skarrier_mobs,False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/event/entity/living/LivingEntityUseItemEvent$Finish#getItem()Lnet/minecraft/world/item/ItemStack;,skarrier_mobs,False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/event/entity/living/LivingEntityUseItemEvent$Start#getEntity()Lnet/minecraft/world/entity/LivingEntity;,cataclysm,False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/event/entity/living/LivingEntityUseItemEvent$Start#getItem()Lnet/minecraft/world/item/ItemStack;,cataclysm,False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/event/entity/living/LivingEntityUseItemEvent$Start#setCanceled(Z)V,cataclysm,False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/event/entity/living/LivingEntityUseItemEvent$Stop#getEntity()Lnet/minecraft/world/entity/LivingEntity;,cataclysm,False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/event/entity/living/LivingEntityUseItemEvent$Stop#getItem()Lnet/minecraft/world/item/ItemStack;,cataclysm,False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/event/entity/living/LivingEntityUseItemEvent$Tick#getEntity()Lnet/minecraft/world/entity/LivingEntity;,cataclysm,False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/event/entity/living/LivingEntityUseItemEvent$Tick#getItem()Lnet/minecraft/world/item/ItemStack;,cataclysm,False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/event/entity/living/LivingEvent$LivingJumpEvent#getEntity()Lnet/minecraft/world/entity/LivingEntity;,cataclysm,False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/event/entity/living/LivingFallEvent#setDistance(F)V,cataclysm,False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/event/entity/living/LivingHealEvent#getAmount()F,skarrier_mobs,False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/event/entity/living/LivingHealEvent#setCanceled(Z)V,cataclysm,False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/event/entity/living/LivingHurtEvent#setCanceled(Z)V,netherman,False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/event/entity/living/LivingKnockBackEvent#getEntity()Lnet/minecraft/world/entity/LivingEntity;,cataclysm,False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/event/entity/living/LivingKnockBackEvent#setCanceled(Z)V,cataclysm,False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/event/entity/living/LivingUseTotemEvent#getEntity()Lnet/minecraft/world/entity/LivingEntity;,skarrier_mobs,False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/event/entity/living/LivingUseTotemEvent#getTotem()Lnet/minecraft/world/item/ItemStack;,skarrier_mobs,False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/event/entity/living/MobEffectEvent$Remove#getEffectInstance()Lnet/minecraft/world/effect/MobEffectInstance;,cataclysm,False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/event/entity/living/MobEffectEvent$Remove#setCanceled(Z)V,cataclysm,False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/event/entity/living/ShieldBlockEvent#getBlockedDamage()F,skarrier_mobs,False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/event/entity/living/ShieldBlockEvent#setShieldTakesDamage(Z)V,cataclysm,False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/event/entity/player/AdvancementEvent$AdvancementEarnEvent#getAdvancement()Lnet/minecraft/advancements/Advancement;,cataclysm,False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/event/entity/player/AdvancementEvent$AdvancementEarnEvent#getEntity()Lnet/minecraft/world/entity/player/Player;,cataclysm,False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/event/entity/player/AttackEntityEvent#getEntity()Lnet/minecraft/world/entity/player/Player;,cataclysm,False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/event/entity/player/AttackEntityEvent#isCancelable()Z,cataclysm,False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/event/entity/player/AttackEntityEvent#setCanceled(Z)V,cataclysm,False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/event/entity/player/CriticalHitEvent#getDamageModifier()F,cataclysm,False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/event/entity/player/CriticalHitEvent#setDamageModifier(F)V,cataclysm,False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/event/entity/player/CriticalHitEvent#setResult(Lnet/minecraftforge/eventbus/api/Event$Result;)V,cataclysm,False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/event/entity/player/FillBucketEvent#getEntity()Lnet/minecraft/world/entity/player/Player;,cataclysm,False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/event/entity/player/FillBucketEvent#isCancelable()Z,cataclysm,False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/event/entity/player/FillBucketEvent#setCanceled(Z)V,cataclysm,False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/event/entity/player/ItemTooltipEvent#getEntity()Lnet/minecraft/world/entity/player/Player;,skarrier_mobs,False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/event/entity/player/ItemTooltipEvent#getItemStack()Lnet/minecraft/world/item/ItemStack;,skarrier_mobs,False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/event/entity/player/ItemTooltipEvent#getToolTip()Ljava/util/List;,skarrier_mobs,False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/event/entity/player/PlayerContainerEvent$Open#<init>(Lnet/minecraft/world/entity/player/Player;Lnet/minecraft/world/inventory/AbstractContainerMenu;)V,cataclysm,False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/event/entity/player/PlayerEvent$Clone#getEntity()Lnet/minecraft/world/entity/player/Player;,skarrier_mobs,False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/event/entity/player/PlayerEvent$Clone#getOriginal()Lnet/minecraft/world/entity/player/Player;,skarrier_mobs,False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/event/entity/player/PlayerEvent$Clone#isWasDeath()Z,skarrier_mobs,False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/event/entity/player/PlayerEvent$PlayerChangedDimensionEvent#getEntity()Lnet/minecraft/world/entity/player/Player;,skarrier_mobs,False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/event/entity/player/PlayerEvent$PlayerLoggedInEvent#getEntity()Lnet/minecraft/world/entity/player/Player;,skarrier_mobs,False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/event/entity/player/PlayerEvent$PlayerRespawnEvent#getEntity()Lnet/minecraft/world/entity/player/Player;,skarrier_mobs,False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/event/entity/player/PlayerInteractEvent$EntityInteract#getHand()Lnet/minecraft/world/InteractionHand;,skarrier_mobs,False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/event/entity/player/PlayerInteractEvent$EntityInteract#getLevel()Lnet/minecraft/world/level/Level;,skarrier_mobs,False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/event/entity/player/PlayerInteractEvent$EntityInteract#getPos()Lnet/minecraft/core/BlockPos;,skarrier_mobs,False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/event/entity/player/PlayerInteractEvent$EntityInteract#getTarget()Lnet/minecraft/world/entity/Entity;,skarrier_mobs,False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/event/entity/player/PlayerInteractEvent$EntityInteract#isCancelable()Z,cataclysm,False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/event/entity/player/PlayerInteractEvent$EntityInteract#setCanceled(Z)V,cataclysm,False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/event/entity/player/PlayerInteractEvent$LeftClickBlock#getEntity()Lnet/minecraft/world/entity/player/Player;,cataclysm,False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/event/entity/player/PlayerInteractEvent$LeftClickBlock#isCancelable()Z,cataclysm,False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/event/entity/player/PlayerInteractEvent$LeftClickBlock#setCanceled(Z)V,cataclysm,False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/event/entity/player/PlayerInteractEvent$LeftClickEmpty#getPos()Lnet/minecraft/core/BlockPos;,skarrier_mobs,False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/event/entity/player/PlayerInteractEvent$LeftClickEmpty#isCancelable()Z,cataclysm,False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/event/entity/player/PlayerInteractEvent$LeftClickEmpty#setCanceled(Z)V,cataclysm,False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/event/entity/player/PlayerInteractEvent$RightClickBlock#getHand()Lnet/minecraft/world/InteractionHand;,skarrier_mobs,False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/event/entity/player/PlayerInteractEvent$RightClickBlock#getLevel()Lnet/minecraft/world/level/Level;,skarrier_mobs,False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/event/entity/player/PlayerInteractEvent$RightClickBlock#getPos()Lnet/minecraft/core/BlockPos;,skarrier_mobs,False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/event/entity/player/PlayerInteractEvent$RightClickBlock#isCancelable()Z,cataclysm,False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/event/entity/player/PlayerInteractEvent$RightClickBlock#setCanceled(Z)V,cataclysm,False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/event/entity/player/PlayerInteractEvent$RightClickEmpty#getHand()Lnet/minecraft/world/InteractionHand;,netherman,False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/event/entity/player/PlayerInteractEvent$RightClickEmpty#isCancelable()Z,cataclysm,False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/event/entity/player/PlayerInteractEvent$RightClickEmpty#setCanceled(Z)V,cataclysm,False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/event/entity/player/PlayerInteractEvent$RightClickItem#getEntity()Lnet/minecraft/world/entity/player/Player;,cataclysm,False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/event/entity/player/PlayerInteractEvent$RightClickItem#setCanceled(Z)V,cataclysm,False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/event/entity/player/PlayerXpEvent$PickupXp#getEntity()Lnet/minecraft/world/entity/player/Player;,skarrier_mobs,False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/event/level/BlockEvent$BlockToolModificationEvent#getContext()Lnet/minecraft/world/item/context/UseOnContext;,skarrier_mobs,False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/event/level/BlockEvent$BlockToolModificationEvent#getPlayer()Lnet/minecraft/world/entity/player/Player;,skarrier_mobs,False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/event/level/BlockEvent$BlockToolModificationEvent#getToolAction()Lnet/minecraftforge/common/ToolAction;,skarrier_mobs,False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/event/level/BlockEvent$BlockToolModificationEvent#isSimulated()Z,skarrier_mobs,False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/event/level/BlockEvent$BreakEvent#getLevel()Lnet/minecraft/world/level/LevelAccessor;,skarrier_mobs,False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/event/level/BlockEvent$BreakEvent#getPos()Lnet/minecraft/core/BlockPos;,skarrier_mobs,False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/event/level/BlockEvent$BreakEvent#getState()Lnet/minecraft/world/level/block/state/BlockState;,skarrier_mobs,False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/event/level/BlockEvent$BreakEvent#isCancelable()Z,cataclysm,False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/event/level/BlockEvent$BreakEvent#setCanceled(Z)V,cataclysm,False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/event/level/BlockEvent$EntityPlaceEvent#getLevel()Lnet/minecraft/world/level/LevelAccessor;,netherman,False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/event/level/BlockEvent$EntityPlaceEvent#getPlacedBlock()Lnet/minecraft/world/level/block/state/BlockState;,netherman,False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/event/level/BlockEvent$EntityPlaceEvent#getPos()Lnet/minecraft/core/BlockPos;,netherman,False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/event/level/BlockEvent$EntityPlaceEvent#isCancelable()Z,cataclysm,False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/event/level/BlockEvent$EntityPlaceEvent#setCanceled(Z)V,cataclysm,False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/event/level/ExplosionEvent$Detonate#getExplosion()Lnet/minecraft/world/level/Explosion;,skarrier_mobs,False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/event/level/ExplosionEvent$Detonate#getLevel()Lnet/minecraft/world/level/Level;,skarrier_mobs,False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/event/level/LevelEvent$Load#getLevel()Lnet/minecraft/world/level/LevelAccessor;,skarrier_mobs,False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/eventbus/api/Event#<init>()V,cataclysm,False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/eventbus/api/Event#isCancelable()Z,skarrier_mobs,False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/eventbus/api/Event#setCanceled(Z)V,skarrier_mobs,False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/eventbus/api/IEventBus#addGenericListener(Ljava/lang/Class;Ljava/util/function/Consumer;)V,cataclysm,False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/eventbus/api/IEventBus#post(Lnet/minecraftforge/eventbus/api/Event;)Z,cataclysm,False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/fluids/FluidType#canSwim(Lnet/minecraft/world/entity/Entity;)Z,cataclysm,False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/fml/DistExecutor#runForDist(Ljava/util/function/Supplier;Ljava/util/function/Supplier;)Ljava/lang/Object;,cataclysm,False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/fml/DistExecutor#unsafeRunWhenOn(Lnet/minecraftforge/api/distmarker/Dist;Ljava/util/function/Supplier;)V,netherman,False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/fml/LogicalSide#isServer()Z,skarrier_mobs,False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/fml/ModLoadingContext#get()Lnet/minecraftforge/fml/ModLoadingContext;,cataclysm,False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/fml/ModLoadingContext#registerConfig(Lnet/minecraftforge/fml/config/ModConfig$Type;Lnet/minecraftforge/fml/config/IConfigSpec;Ljava/lang/String;)V,cataclysm,False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/fml/config/ModConfig#getSpec()Lnet/minecraftforge/fml/config/IConfigSpec;,cataclysm,False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/fml/event/config/ModConfigEvent$Loading#getConfig()Lnet/minecraftforge/fml/config/ModConfig;,cataclysm,False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/fml/event/config/ModConfigEvent$Reloading#getConfig()Lnet/minecraftforge/fml/config/ModConfig;,cataclysm,False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/fml/event/lifecycle/FMLCommonSetupEvent#enqueueWork(Ljava/util/function/Supplier;)Ljava/util/concurrent/CompletableFuture;,skarrier_mobs,False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/fml/javafmlmod/FMLJavaModLoadingContext#registerConfig(Lnet/minecraftforge/fml/config/ModConfig$Type;Lnet/minecraftforge/fml/config/IConfigSpec;)V,netherman,False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/items/IItemHandler#extractItem(IIZ)Lnet/minecraft/world/item/ItemStack;,skarrier_mobs,False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/items/IItemHandler#getSlots()I,skarrier_mobs,False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/items/IItemHandler#getStackInSlot(I)Lnet/minecraft/world/item/ItemStack;,skarrier_mobs,False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/items/ItemStackHandler#<init>(I)V,skarrier_mobs,False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/items/SlotItemHandler#<init>(Lnet/minecraftforge/items/IItemHandler;III)V,skarrier_mobs,False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/items/wrapper/InvWrapper#<init>(Lnet/minecraft/world/Container;)V,cataclysm,False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/items/wrapper/SidedInvWrapper#create(Lnet/minecraft/world/WorldlyContainer;[Lnet/minecraft/core/Direction;)[Lnet/minecraftforge/common/util/LazyOptional;,skarrier_mobs,False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/network/NetworkHooks#openScreen(Lnet/minecraft/server/level/ServerPlayer;Lnet/minecraft/world/MenuProvider;Lnet/minecraft/core/BlockPos;)V,skarrier_mobs,False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/network/NetworkRegistry#newSimpleChannel(Lnet/minecraft/resources/ResourceLocation;Ljava/util/function/Supplier;Ljava/util/function/Predicate;Ljava/util/function/Predicate;)Lnet/minecraftforge/network/simple/SimpleChannel;,skarrier_mobs,False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/network/PacketDistributor#noArg()Lnet/minecraftforge/network/PacketDistributor$PacketTarget;,skarrier_mobs,False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/network/simple/SimpleChannel#messageBuilder(Ljava/lang/Class;ILnet/minecraftforge/network/NetworkDirection;)Lnet/minecraftforge/network/simple/SimpleChannel$MessageBuilder;,netherman,False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/network/simple/SimpleChannel#sendTo(Ljava/lang/Object;Lnet/minecraft/network/Connection;Lnet/minecraftforge/network/NetworkDirection;)V,cataclysm,False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/network/simple/SimpleChannel$MessageBuilder#add()V,netherman,False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/network/simple/SimpleChannel$MessageBuilder#consumerMainThread(Ljava/util/function/BiConsumer;)Lnet/minecraftforge/network/simple/SimpleChannel$MessageBuilder;,netherman,False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/network/simple/SimpleChannel$MessageBuilder#decoder(Ljava/util/function/Function;)Lnet/minecraftforge/network/simple/SimpleChannel$MessageBuilder;,netherman,False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/network/simple/SimpleChannel$MessageBuilder#encoder(Ljava/util/function/BiConsumer;)Lnet/minecraftforge/network/simple/SimpleChannel$MessageBuilder;,netherman,False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/registries/IForgeRegistry#getRegistryName()Lnet/minecraft/resources/ResourceLocation;,cataclysm,False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/registries/IForgeRegistry#getValues()Ljava/util/Collection;,netherman,False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/registries/RegistryObject#create(Lnet/minecraft/resources/ResourceLocation;Lnet/minecraft/resources/ResourceKey;Ljava/lang/String;)Lnet/minecraftforge/registries/RegistryObject;,cataclysm,False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/registries/RegistryObject#getHolder()Ljava/util/Optional;,netherman,False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/registries/RegistryObject#getId()Lnet/minecraft/resources/ResourceLocation;,skarrier_mobs,False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/registries/RegistryObject#getKey()Lnet/minecraft/resources/ResourceKey;,cataclysm,False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/registries/RegistryObject#isPresent()Z,netherman,False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/registries/tags/ITag#contains(Ljava/lang/Object;)Z,cataclysm,False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/registries/tags/ITag#getRandomElement(Lnet/minecraft/util/RandomSource;)Ljava/util/Optional;,skarrier_mobs,False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/registries/tags/ITag#isEmpty()Z,cataclysm,False,Requires verified equivalent in Fabric 1.20.1
+method,net/minecraftforge/server/ServerLifecycleHooks#getCurrentServer()Lnet/minecraft/server/MinecraftServer;,cataclysm,False,Requires verified equivalent in Fabric 1.20.1
+field,net/minecraftforge/common/MinecraftForge#EVENT_BUSLnet/minecraftforge/eventbus/api/IEventBus;,"cataclysm, netherman, skarrier_mobs",False,Requires verified equivalent in Fabric 1.20.1
+field,net/minecraftforge/event/TickEvent$Phase#STARTLnet/minecraftforge/event/TickEvent$Phase;,"cataclysm, netherman, skarrier_mobs",False,Requires verified equivalent in Fabric 1.20.1
+field,net/minecraftforge/network/PacketDistributor#PLAYERLnet/minecraftforge/network/PacketDistributor;,"cataclysm, netherman, skarrier_mobs",False,Requires verified equivalent in Fabric 1.20.1
+field,net/minecraftforge/registries/ForgeRegistries#BLOCKSLnet/minecraftforge/registries/IForgeRegistry;,"cataclysm, netherman, skarrier_mobs",False,Requires verified equivalent in Fabric 1.20.1
+field,net/minecraftforge/registries/ForgeRegistries#BLOCK_ENTITY_TYPESLnet/minecraftforge/registries/IForgeRegistry;,"cataclysm, netherman, skarrier_mobs",False,Requires verified equivalent in Fabric 1.20.1
+field,net/minecraftforge/registries/ForgeRegistries#ENTITY_TYPESLnet/minecraftforge/registries/IForgeRegistry;,"cataclysm, netherman, skarrier_mobs",False,Requires verified equivalent in Fabric 1.20.1
+field,net/minecraftforge/registries/ForgeRegistries#ITEMSLnet/minecraftforge/registries/IForgeRegistry;,"cataclysm, netherman, skarrier_mobs",False,Requires verified equivalent in Fabric 1.20.1
+field,net/minecraftforge/registries/ForgeRegistries#MOB_EFFECTSLnet/minecraftforge/registries/IForgeRegistry;,"cataclysm, netherman, skarrier_mobs",False,Requires verified equivalent in Fabric 1.20.1
+field,net/minecraftforge/registries/ForgeRegistries#SOUND_EVENTSLnet/minecraftforge/registries/IForgeRegistry;,"cataclysm, netherman, skarrier_mobs",False,Requires verified equivalent in Fabric 1.20.1
+field,net/minecraftforge/common/ForgeMod#BLOCK_REACHLnet/minecraftforge/registries/RegistryObject;,"cataclysm, skarrier_mobs",False,Requires verified equivalent in Fabric 1.20.1
+field,net/minecraftforge/common/capabilities/ForgeCapabilities#ITEM_HANDLERLnet/minecraftforge/common/capabilities/Capability;,"cataclysm, skarrier_mobs",False,Requires verified equivalent in Fabric 1.20.1
+field,net/minecraftforge/event/TickEvent$ClientTickEvent#phaseLnet/minecraftforge/event/TickEvent$Phase;,"cataclysm, netherman",False,Requires verified equivalent in Fabric 1.20.1
+field,net/minecraftforge/event/TickEvent$Phase#ENDLnet/minecraftforge/event/TickEvent$Phase;,"netherman, skarrier_mobs",False,Requires verified equivalent in Fabric 1.20.1
+field,net/minecraftforge/event/TickEvent$PlayerTickEvent#phaseLnet/minecraftforge/event/TickEvent$Phase;,"netherman, skarrier_mobs",False,Requires verified equivalent in Fabric 1.20.1
+field,net/minecraftforge/event/TickEvent$PlayerTickEvent#playerLnet/minecraft/world/entity/player/Player;,"netherman, skarrier_mobs",False,Requires verified equivalent in Fabric 1.20.1
+field,net/minecraftforge/fml/config/ModConfig$Type#COMMONLnet/minecraftforge/fml/config/ModConfig$Type;,"cataclysm, netherman",False,Requires verified equivalent in Fabric 1.20.1
+field,net/minecraftforge/network/NetworkDirection#PLAY_TO_CLIENTLnet/minecraftforge/network/NetworkDirection;,"cataclysm, netherman",False,Requires verified equivalent in Fabric 1.20.1
+field,net/minecraftforge/registries/ForgeRegistries#MENU_TYPESLnet/minecraftforge/registries/IForgeRegistry;,"cataclysm, skarrier_mobs",False,Requires verified equivalent in Fabric 1.20.1
+field,net/minecraftforge/registries/ForgeRegistries#PARTICLE_TYPESLnet/minecraftforge/registries/IForgeRegistry;,"cataclysm, skarrier_mobs",False,Requires verified equivalent in Fabric 1.20.1
+field,net/minecraftforge/registries/ForgeRegistries#RECIPE_SERIALIZERSLnet/minecraftforge/registries/IForgeRegistry;,"cataclysm, netherman",False,Requires verified equivalent in Fabric 1.20.1
+field,net/minecraftforge/api/distmarker/Dist#CLIENTLnet/minecraftforge/api/distmarker/Dist;,netherman,False,Requires verified equivalent in Fabric 1.20.1
+field,net/minecraftforge/client/event/RenderLevelStageEvent$Stage#AFTER_TRANSLUCENT_BLOCKSLnet/minecraftforge/client/event/RenderLevelStageEvent$Stage;,netherman,False,Requires verified equivalent in Fabric 1.20.1
+field,net/minecraftforge/client/gui/overlay/ForgeGui#leftHeightI,cataclysm,False,Requires verified equivalent in Fabric 1.20.1
+field,net/minecraftforge/client/gui/overlay/VanillaGuiOverlay#HELMETLnet/minecraftforge/client/gui/overlay/VanillaGuiOverlay;,cataclysm,False,Requires verified equivalent in Fabric 1.20.1
+field,net/minecraftforge/client/gui/overlay/VanillaGuiOverlay#HOTBARLnet/minecraftforge/client/gui/overlay/VanillaGuiOverlay;,netherman,False,Requires verified equivalent in Fabric 1.20.1
+field,net/minecraftforge/client/gui/overlay/VanillaGuiOverlay#PLAYER_HEALTHLnet/minecraftforge/client/gui/overlay/VanillaGuiOverlay;,cataclysm,False,Requires verified equivalent in Fabric 1.20.1
+field,net/minecraftforge/client/model/data/ModelData#EMPTYLnet/minecraftforge/client/model/data/ModelData;,cataclysm,False,Requires verified equivalent in Fabric 1.20.1
+field,net/minecraftforge/common/ForgeMod#ENTITY_GRAVITYLnet/minecraftforge/registries/RegistryObject;,skarrier_mobs,False,Requires verified equivalent in Fabric 1.20.1
+field,net/minecraftforge/common/ForgeMod#ENTITY_REACHLnet/minecraftforge/registries/RegistryObject;,cataclysm,False,Requires verified equivalent in Fabric 1.20.1
+field,net/minecraftforge/common/ForgeMod#LAVA_TYPELnet/minecraftforge/registries/RegistryObject;,cataclysm,False,Requires verified equivalent in Fabric 1.20.1
+field,net/minecraftforge/common/ForgeMod#STEP_HEIGHT_ADDITIONLnet/minecraftforge/registries/RegistryObject;,cataclysm,False,Requires verified equivalent in Fabric 1.20.1
+field,net/minecraftforge/common/ForgeMod#SWIM_SPEEDLnet/minecraftforge/registries/RegistryObject;,skarrier_mobs,False,Requires verified equivalent in Fabric 1.20.1
+field,net/minecraftforge/common/ForgeMod#WATER_TYPELnet/minecraftforge/registries/RegistryObject;,cataclysm,False,Requires verified equivalent in Fabric 1.20.1
+field,net/minecraftforge/common/ToolActions#DEFAULT_PICKAXE_ACTIONSLjava/util/Set;,cataclysm,False,Requires verified equivalent in Fabric 1.20.1
+field,net/minecraftforge/common/ToolActions#DEFAULT_SHIELD_ACTIONSLjava/util/Set;,cataclysm,False,Requires verified equivalent in Fabric 1.20.1
+field,net/minecraftforge/common/ToolActions#DEFAULT_SWORD_ACTIONSLjava/util/Set;,cataclysm,False,Requires verified equivalent in Fabric 1.20.1
+field,net/minecraftforge/common/ToolActions#HOE_TILLLnet/minecraftforge/common/ToolAction;,skarrier_mobs,False,Requires verified equivalent in Fabric 1.20.1
+field,net/minecraftforge/common/ToolActions#SHIELD_BLOCKLnet/minecraftforge/common/ToolAction;,cataclysm,False,Requires verified equivalent in Fabric 1.20.1
+field,net/minecraftforge/common/world/BiomeModifier$Phase#ADDLnet/minecraftforge/common/world/BiomeModifier$Phase;,cataclysm,False,Requires verified equivalent in Fabric 1.20.1
+field,net/minecraftforge/common/world/StructureModifier$Phase#ADDLnet/minecraftforge/common/world/StructureModifier$Phase;,cataclysm,False,Requires verified equivalent in Fabric 1.20.1
+field,net/minecraftforge/event/TickEvent$ServerTickEvent#phaseLnet/minecraftforge/event/TickEvent$Phase;,skarrier_mobs,False,Requires verified equivalent in Fabric 1.20.1
+field,net/minecraftforge/event/entity/SpawnPlacementRegisterEvent$Operation#ANDLnet/minecraftforge/event/entity/SpawnPlacementRegisterEvent$Operation;,cataclysm,False,Requires verified equivalent in Fabric 1.20.1
+field,net/minecraftforge/eventbus/api/Event$Result#ALLOWLnet/minecraftforge/eventbus/api/Event$Result;,cataclysm,False,Requires verified equivalent in Fabric 1.20.1
+field,net/minecraftforge/eventbus/api/Event$Result#DENYLnet/minecraftforge/eventbus/api/Event$Result;,cataclysm,False,Requires verified equivalent in Fabric 1.20.1
+field,net/minecraftforge/fml/LogicalSide#CLIENTLnet/minecraftforge/fml/LogicalSide;,cataclysm,False,Requires verified equivalent in Fabric 1.20.1
+field,net/minecraftforge/fml/config/ModConfig$Type#CLIENTLnet/minecraftforge/fml/config/ModConfig$Type;,cataclysm,False,Requires verified equivalent in Fabric 1.20.1
+field,net/minecraftforge/fml/util/thread/SidedThreadGroups#SERVERLnet/minecraftforge/fml/util/thread/SidedThreadGroup;,skarrier_mobs,False,Requires verified equivalent in Fabric 1.20.1
+field,net/minecraftforge/network/NetworkDirection#PLAY_TO_SERVERLnet/minecraftforge/network/NetworkDirection;,netherman,False,Requires verified equivalent in Fabric 1.20.1
+field,net/minecraftforge/network/PacketDistributor#ALLLnet/minecraftforge/network/PacketDistributor;,skarrier_mobs,False,Requires verified equivalent in Fabric 1.20.1
+field,net/minecraftforge/network/PacketDistributor#DIMENSIONLnet/minecraftforge/network/PacketDistributor;,skarrier_mobs,False,Requires verified equivalent in Fabric 1.20.1
+field,net/minecraftforge/network/PacketDistributor#TRACKING_ENTITY_AND_SELFLnet/minecraftforge/network/PacketDistributor;,cataclysm,False,Requires verified equivalent in Fabric 1.20.1
+field,net/minecraftforge/registries/ForgeRegistries#ATTRIBUTESLnet/minecraftforge/registries/IForgeRegistry;,cataclysm,False,Requires verified equivalent in Fabric 1.20.1
+field,net/minecraftforge/registries/ForgeRegistries#PAINTING_VARIANTSLnet/minecraftforge/registries/IForgeRegistry;,netherman,False,Requires verified equivalent in Fabric 1.20.1
+field,net/minecraftforge/registries/ForgeRegistries#POTIONSLnet/minecraftforge/registries/IForgeRegistry;,skarrier_mobs,False,Requires verified equivalent in Fabric 1.20.1
+field,net/minecraftforge/registries/ForgeRegistries#RECIPE_TYPESLnet/minecraftforge/registries/IForgeRegistry;,cataclysm,False,Requires verified equivalent in Fabric 1.20.1
+field,net/minecraftforge/registries/ForgeRegistries$Keys#BIOME_MODIFIER_SERIALIZERSLnet/minecraft/resources/ResourceKey;,cataclysm,False,Requires verified equivalent in Fabric 1.20.1
+field,net/minecraftforge/registries/ForgeRegistries$Keys#ENTITY_DATA_SERIALIZERSLnet/minecraft/resources/ResourceKey;,cataclysm,False,Requires verified equivalent in Fabric 1.20.1
+field,net/minecraftforge/registries/ForgeRegistries$Keys#STRUCTURE_MODIFIER_SERIALIZERSLnet/minecraft/resources/ResourceKey;,cataclysm,False,Requires verified equivalent in Fabric 1.20.1
