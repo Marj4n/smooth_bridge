@@ -1,9 +1,7 @@
 .gradle/
 build/
-manager/build/
+out/
 .idea/
 *.iml
 run/
-.tmp-*/
 *.log
-.DS_Store

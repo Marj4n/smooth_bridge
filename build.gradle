@@ -1,52 +1,89 @@
 plugins {
-    id 'fabric-loom' version '1.10.5'
-    id 'maven-publish'
+    id 'java'
 }
 
-version = project.mod_version + '+1.20.1'
-group = project.maven_group
-
-base {
-    archivesName = project.archives_base_name
-}
+group = 'org.marj4n'
+version = "${smoothBridgeVersion}+${minecraftVersion}"
 
 repositories {
     mavenCentral()
+    maven { url = uri('https://api.modrinth.com/maven') }
+}
+
+configurations {
+    kiltBinary {
+        canBeConsumed = false
+        canBeResolved = true
+    }
+    lionfishBinary {
+        canBeConsumed = false
+        canBeResolved = true
+    }
+    curiosBinary {
+        canBeConsumed = false
+        canBeResolved = true
+    }
+    citadelBinary {
+        canBeConsumed = false
+        canBeResolved = true
+    }
 }
 
 dependencies {
-    minecraft "com.mojang:minecraft:${project.minecraft_version}"
-    mappings "net.fabricmc:yarn:${project.yarn_mappings}:v2"
-    modImplementation "net.fabricmc:fabric-loader:${project.loader_version}"
-    // Deliberately no compile-time Kilt/Fabric API dependency: minimizes linkage failures.
-}
+    // Pinned public artifacts. No git clone or Python needed.
+    kiltBinary('maven.modrinth:t87XZEqv:ZuseJZSH') { transitive = false } // Kilt v20.1.21, 1.20.1
+    lionfishBinary('maven.modrinth:FoVacERa:CPftDBcY') { transitive = false } // Lionfish API 3.0, Forge 1.20.1
+    curiosBinary('maven.modrinth:vvuO3ImH:IPQlZkz1') { transitive = false } // Curios 5.14.1, Forge 1.20.1 (FULL mod JAR)
+    citadelBinary('maven.modrinth:jJfV67b1:lTAAe4sZ') { transitive = false } // Citadel 2.6.3, Forge 1.20.1
 
-processResources {
-    inputs.property 'version', project.version
-    filesMatching('fabric.mod.json') {
-        expand version: project.version
-    }
+    // Build-time Java bytecode patcher; NOT included in the Minecraft mod.
+    implementation 'org.ow2.asm:asm:9.7.1'
+    implementation 'org.ow2.asm:asm-tree:9.7.1'
+    testImplementation 'org.junit.jupiter:junit-jupiter:5.11.4'
+    testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
 }
 
 java {
-    toolchain.languageVersion = JavaLanguageVersion.of(17)
+    toolchain { languageVersion = JavaLanguageVersion.of(21) }
     withSourcesJar()
 }
-
 tasks.withType(JavaCompile).configureEach {
-    options.release = 17
     options.encoding = 'UTF-8'
+    options.release = 17
 }
+test { useJUnitPlatform() }
 
-jar {
-    from('LICENSE')
-}
+// Deliberately no plain thin 'jar': its mere existence previously caused an audit JAR
+// to be mistaken for a playable compatibility runtime. Only the verified output task
+// can generate a candidate Minecraft mod with Kilt's complete runtime present.
+tasks.named('jar') { enabled = false }
 
-publishing {
-    publications {
-        create('mavenJava', MavenPublication) {
-            artifactId = project.archives_base_name
-            from components.java
-        }
+def candidateName = "smooth_bridge-${version}-EXPERIMENTAL.jar"
+
+tasks.register('smoothBridgeJar', JavaExec) {
+    group = 'build'
+    description = 'Build the selective Kilt-derived runtime for five Forge mods; Citadel, Lionfish and Curios bundled, Java project.'
+    dependsOn tasks.named('classes')
+    classpath = sourceSets.main.runtimeClasspath
+    mainClass = 'org.marj4n.smoothbridge.build.KiltBinaryPatcher'
+    doFirst {
+        def upstream = configurations.kiltBinary.singleFile
+        def lionfish = configurations.lionfishBinary.singleFile
+        def curios = configurations.curiosBinary.singleFile
+        def citadel = configurations.citadelBinary.singleFile
+        def output = layout.buildDirectory.file("libs/${candidateName}").get().asFile
+        output.parentFile.mkdirs()
+        setArgs([
+            upstream.absolutePath,
+            lionfish.absolutePath,
+            curios.absolutePath,
+            citadel.absolutePath,
+            project.projectDir.absolutePath,
+            sourceSets.main.output.classesDirs.singleFile.absolutePath,
+            output.absolutePath,
+            version.toString()
+        ])
     }
 }
+
+tasks.named('assemble') { dependsOn tasks.named('smoothBridgeJar') }
