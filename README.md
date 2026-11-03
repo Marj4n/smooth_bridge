@@ -25,3 +25,7 @@ Java adaptations by Marj4n. The generated runtime modifies [Kilt 20.1.21](https:
 Bundled libraries remain separate, original nested JARs: [Citadel 2.6.3](https://github.com/AlexModGuy/Citadel) by Alexthe666/AlexModGuy (LGPL-3.0-only), [Lionfish API 3.0](https://github.com/lender544/Lionfish-API) by mcl_ender and contributors (LGPL-3.0-only), and [Curios 5.14.1](https://github.com/TheIllusiveC4/Curios/tree/1.20.x) by TheIllusiveC4 and contributors (LGPL-3.0-or-later). Retain each library's replacement/modification and source-distribution rights.
 
 Third-party gameplay mod JARs are not redistributed. Root license texts and `licenses/` are preserved; each component keeps its own terms.
+
+## Permission enquiries
+
+For support or permission enquiries concerning separately owned material, contact Marj4n through [nivekts.vercel.app](https://nivekts.vercel.app/). This contact policy does not add an approval requirement to rights granted by the applicable LGPL licenses. The bridge and bundled components retain the licenses and source/replacement rights described above; earlier valid grants and GitHub platform rights remain unaffected.
