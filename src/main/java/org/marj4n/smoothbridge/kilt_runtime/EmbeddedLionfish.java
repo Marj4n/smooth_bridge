@@ -23,36 +23,44 @@ public final class EmbeddedLionfish {
     public static final String RESOURCE = "META-INF/smoothbridge/lionfishapi-3.0.jar";
     public static final String DIGEST = "META-INF/smoothbridge/lionfishapi-3.0.sha256";
 
-    private EmbeddedLionfish() { }
+    private EmbeddedLionfish() {}
 
     public static List<?> extendBuiltIns(List<?> originalDefinitions, Object loader) {
         Objects.requireNonNull(originalDefinitions, "definitions");
         Objects.requireNonNull(loader, "loader");
         Path nestedJar = extract();
         try {
-            Method forgeScanner = loader.getClass().getDeclaredMethod("loadModDefinitions", Path.class, List.class);
+            Method forgeScanner =
+                    loader.getClass()
+                            .getDeclaredMethod("loadModDefinitions", Path.class, List.class);
             forgeScanner.setAccessible(true);
             Object scanned = forgeScanner.invoke(loader, nestedJar, null);
             if (!(scanned instanceof List<?> nestedDefinitions) || nestedDefinitions.size() != 1) {
-                throw new IllegalStateException("Embedded Lionfish must resolve to exactly one Forge mod");
+                throw new IllegalStateException(
+                        "Embedded Lionfish must resolve to exactly one Forge mod");
             }
             List<Object> merged = new ArrayList<>(originalDefinitions.size() + 1);
             merged.addAll(originalDefinitions);
             merged.addAll(nestedDefinitions);
-            System.out.println("[Smooth Bridge] Embedded lionfishapi 3.0 registered through Forge discovery");
+            System.out.println(
+                    "[Smooth Bridge] Embedded lionfishapi 3.0 registered through Forge discovery");
             return merged;
         } catch (NoSuchMethodException | IllegalAccessException e) {
-            throw new IllegalStateException("Upstream Kilt loader ABI changed; cannot register Lionfish", e);
+            throw new IllegalStateException(
+                    "Upstream Kilt loader ABI changed; cannot register Lionfish", e);
         } catch (InvocationTargetException e) {
-            throw new IllegalStateException("Kilt rejected embedded Lionfish API during discovery", e.getCause());
+            throw new IllegalStateException(
+                    "Kilt rejected embedded Lionfish API during discovery", e.getCause());
         }
     }
 
     public static synchronized Path extract() {
         try {
             byte[] jarBytes = resourceBytes(RESOURCE);
-            String expected = new String(resourceBytes(DIGEST), StandardCharsets.UTF_8)
-                    .trim().toLowerCase(Locale.ROOT);
+            String expected =
+                    new String(resourceBytes(DIGEST), StandardCharsets.UTF_8)
+                            .trim()
+                            .toLowerCase(Locale.ROOT);
             if (!expected.matches("[0-9a-f]{64}")) {
                 throw new IllegalStateException("Invalid embedded Lionfish SHA-256 metadata");
             }
@@ -63,7 +71,8 @@ public final class EmbeddedLionfish {
             Path cache = TargetJars.gameDir().resolve(".smoothbridge-cache").resolve("embedded");
             Files.createDirectories(cache);
             Path output = cache.resolve("lionfishapi-3.0-" + expected.substring(0, 24) + ".jar");
-            if (Files.exists(output) && expected.equals(TargetJars.sha256(Files.readAllBytes(output)))) {
+            if (Files.exists(output)
+                    && expected.equals(TargetJars.sha256(Files.readAllBytes(output)))) {
                 verifyLionfishJar(output);
                 return output;
             }
@@ -72,7 +81,10 @@ public final class EmbeddedLionfish {
                 Files.write(temporary, jarBytes);
                 verifyLionfishJar(temporary);
                 try {
-                    Files.move(temporary, output, StandardCopyOption.REPLACE_EXISTING,
+                    Files.move(
+                            temporary,
+                            output,
+                            StandardCopyOption.REPLACE_EXISTING,
                             StandardCopyOption.ATOMIC_MOVE);
                 } catch (java.nio.file.AtomicMoveNotSupportedException notAtomic) {
                     Files.move(temporary, output, StandardCopyOption.REPLACE_EXISTING);
@@ -104,9 +116,11 @@ public final class EmbeddedLionfish {
     }
 
     private static byte[] resourceBytes(String resource) throws IOException {
-        try (InputStream in = EmbeddedLionfish.class.getClassLoader().getResourceAsStream(resource)) {
+        try (InputStream in =
+                EmbeddedLionfish.class.getClassLoader().getResourceAsStream(resource)) {
             if (in == null) {
-                throw new IllegalStateException("Missing resource in Smooth Bridge runtime: " + resource);
+                throw new IllegalStateException(
+                        "Missing resource in Smooth Bridge runtime: " + resource);
             }
             return in.readAllBytes();
         }

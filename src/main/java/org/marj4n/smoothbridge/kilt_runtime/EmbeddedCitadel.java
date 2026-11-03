@@ -26,7 +26,7 @@ public final class EmbeddedCitadel {
     public static final String DIGEST = "META-INF/smoothbridge/citadel-2.6.3.sha256";
     private static final String MAIN_CLASS = "com/github/alexthe666/citadel/Citadel.class";
 
-    private EmbeddedCitadel() { }
+    private EmbeddedCitadel() {}
 
     public static List<?> extendBuiltIns(List<?> originals, Object loader) {
         Objects.requireNonNull(originals, "originals");
@@ -35,24 +35,31 @@ public final class EmbeddedCitadel {
             return originals;
         }
         // Detect native Fabric Citadel before trying to load the Forge class.
-        TargetJars.assertNoFabricPortCollision("alexscaves", EmbeddedCitadel::isFabricModLoadedCitadel);
+        TargetJars.assertNoFabricPortCollision(
+                "alexscaves", EmbeddedCitadel::isFabricModLoadedCitadel);
         Path embedded = extract();
         try {
-            Method scanner = loader.getClass().getDeclaredMethod("loadModDefinitions", Path.class, List.class);
+            Method scanner =
+                    loader.getClass()
+                            .getDeclaredMethod("loadModDefinitions", Path.class, List.class);
             scanner.setAccessible(true);
             Object result = scanner.invoke(loader, embedded, null);
             if (!(result instanceof List<?> discovered) || discovered.size() != 1) {
-                throw new IllegalStateException("Embedded Citadel must resolve to exactly one Forge mod");
+                throw new IllegalStateException(
+                        "Embedded Citadel must resolve to exactly one Forge mod");
             }
             List<Object> merged = new ArrayList<>(originals.size() + 1);
             merged.addAll(originals);
             merged.addAll(discovered);
-            System.out.println("[Smooth Bridge] Embedded Citadel Forge 2.6.3 registered for Alex's Caves/Mobs");
+            System.out.println(
+                    "[Smooth Bridge] Embedded Citadel Forge 2.6.3 registered for Alex's Caves/Mobs");
             return merged;
         } catch (NoSuchMethodException | IllegalAccessException e) {
-            throw new IllegalStateException("Kilt loader ABI changed; cannot add Citadel to Forge discovery", e);
+            throw new IllegalStateException(
+                    "Kilt loader ABI changed; cannot add Citadel to Forge discovery", e);
         } catch (InvocationTargetException e) {
-            throw new IllegalStateException("Kilt rejected embedded Citadel during discovery", e.getCause());
+            throw new IllegalStateException(
+                    "Kilt rejected embedded Citadel during discovery", e.getCause());
         }
     }
 
@@ -74,15 +81,19 @@ public final class EmbeddedCitadel {
     public static synchronized Path extract() {
         try {
             byte[] bytes = resource(RESOURCE);
-            String expected = new String(resource(DIGEST), StandardCharsets.UTF_8)
-                    .trim().toLowerCase(Locale.ROOT);
+            String expected =
+                    new String(resource(DIGEST), StandardCharsets.UTF_8)
+                            .trim()
+                            .toLowerCase(Locale.ROOT);
             if (!expected.matches("[0-9a-f]{64}") || !expected.equals(TargetJars.sha256(bytes))) {
                 throw new IllegalStateException("Embedded Citadel SHA-256 verification failed");
             }
             Path folder = TargetJars.gameDir().resolve(".smoothbridge-cache").resolve("embedded");
             Files.createDirectories(folder);
-            Path output = folder.resolve("citadel-2.6.3-1.20.1-" + expected.substring(0, 24) + ".jar");
-            if (Files.isRegularFile(output) && expected.equals(TargetJars.sha256(Files.readAllBytes(output)))) {
+            Path output =
+                    folder.resolve("citadel-2.6.3-1.20.1-" + expected.substring(0, 24) + ".jar");
+            if (Files.isRegularFile(output)
+                    && expected.equals(TargetJars.sha256(Files.readAllBytes(output)))) {
                 validateArchive(output);
                 return output;
             }
@@ -91,7 +102,11 @@ public final class EmbeddedCitadel {
                 Files.write(temporary, bytes);
                 validateArchive(temporary);
                 try {
-                    Files.move(temporary, output, StandardCopyOption.ATOMIC_MOVE, StandardCopyOption.REPLACE_EXISTING);
+                    Files.move(
+                            temporary,
+                            output,
+                            StandardCopyOption.ATOMIC_MOVE,
+                            StandardCopyOption.REPLACE_EXISTING);
                 } catch (java.nio.file.AtomicMoveNotSupportedException fallback) {
                     Files.move(temporary, output, StandardCopyOption.REPLACE_EXISTING);
                 }
@@ -122,13 +137,17 @@ public final class EmbeddedCitadel {
             if (mod == null || !"citadel".equals(mod.id())) {
                 throw new IOException("Bundled archive is not the Forge Citadel mod: " + mod);
             }
-            if (!("2.6.3".equals(mod.version()) || "${file.jarVersion}".equals(mod.version())
+            if (!("2.6.3".equals(mod.version())
+                    || "${file.jarVersion}".equals(mod.version())
                     || mod.version().startsWith("2.6.3+"))) {
                 throw new IOException("Wrong Citadel version, expected 2.6.3: " + mod.version());
             }
-            if ("${file.jarVersion}".equals(mod.version()) &&
-                    (jar.getManifest() == null || jar.getManifest().getMainAttributes()
-                            .getValue("Implementation-Version") == null)) {
+            if ("${file.jarVersion}".equals(mod.version())
+                    && (jar.getManifest() == null
+                            || jar.getManifest()
+                                            .getMainAttributes()
+                                            .getValue("Implementation-Version")
+                                    == null)) {
                 throw new IOException("Citadel requires an Implementation-Version manifest value");
             }
         }

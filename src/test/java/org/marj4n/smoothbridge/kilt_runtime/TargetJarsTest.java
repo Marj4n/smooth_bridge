@@ -21,23 +21,27 @@ class TargetJarsTest {
     @TempDir Path temporary;
     private String originalUserDir;
 
-    @BeforeEach void setup() {
+    @BeforeEach
+    void setup() {
         originalUserDir = System.getProperty("user.dir");
         System.setProperty("user.dir", temporary.toString());
     }
 
-    @AfterEach void cleanup() {
+    @AfterEach
+    void cleanup() {
         System.setProperty("user.dir", originalUserDir);
     }
 
-    @Test void allowsTheFivePinnedModsByForgeIdAndVersion() throws IOException {
-        for (String[] target : new String[][] {
-                {"skarrier_mobs", "1.1.1"},
-                {"netherman", "1.1.4.12"},
-                {"cataclysm", "3.31"},
-                {"alexscaves", "2.0.2"},
-                {"alexsmobs", "1.22.9"}
-        }) {
+    @Test
+    void allowsTheFivePinnedModsByForgeIdAndVersion() throws IOException {
+        for (String[] target :
+                new String[][] {
+                    {"skarrier_mobs", "1.1.1"},
+                    {"netherman", "1.1.4.12"},
+                    {"cataclysm", "3.31"},
+                    {"alexscaves", "2.0.2"},
+                    {"alexsmobs", "1.22.9"}
+                }) {
             Path jar = fakeJar(target[0] + ".jar", toml(target[0], target[1], "[47,)"), false);
             Path selected = TargetJars.permitAndPrepare(jar);
             assertTrue(Files.isRegularFile(selected));
@@ -47,11 +51,12 @@ class TargetJarsTest {
         }
     }
 
-    @Test void refusesFabricAndUnknownForgeJars() throws IOException {
+    @Test
+    void refusesFabricAndUnknownForgeJars() throws IOException {
         Path fabric = fakeJar("fabric.jar", toml("cataclysm", "3.31", "[47,)"), true);
         Path foreign = fakeJar("foreign.jar", toml("unrelated_mod", "1.0", "[47,)"), false);
         Path wrongVersion = fakeJar("wrong.jar", toml("cataclysm", "999", "[47,)"), false);
-        for (Path input : new Path[] { fabric, foreign, wrongVersion }) {
+        for (Path input : new Path[] {fabric, foreign, wrongVersion}) {
             Path selected = TargetJars.permitAndPrepare(input);
             try (JarFile selectedJar = new JarFile(selected.toFile())) {
                 assertNull(selectedJar.getJarEntry("META-INF/mods.toml"));
@@ -59,7 +64,8 @@ class TargetJarsTest {
         }
     }
 
-    @Test void normalizesAzazelOnlyInCacheAndPreservesOriginalBytes() throws Exception {
+    @Test
+    void normalizesAzazelOnlyInCacheAndPreservesOriginalBytes() throws Exception {
         Path azazel = fakeJar("original-azazel.jar", toml("netherman", "1.1.4.12", "Forge"), false);
         String hash = TargetJars.sha256(Files.readAllBytes(azazel));
         Path normalized = TargetJars.permitAndPrepare(azazel);
@@ -71,7 +77,8 @@ class TargetJarsTest {
         assertEquals(normalized, TargetJars.permitAndPrepare(azazel));
     }
 
-    @Test void helperClassesAreInKiltIgnoredNamespace() {
+    @Test
+    void helperClassesAreInKiltIgnoredNamespace() {
         assertTrue(TargetJars.class.getName().contains("kilt"));
         assertTrue(EmbeddedLionfish.class.getName().contains("kilt"));
         assertTrue(TargetJars.class.getName().contains(".kilt_runtime."));
@@ -80,7 +87,8 @@ class TargetJarsTest {
         assertTrue(EmbeddedCitadel.class.getName().contains(".kilt_runtime."));
     }
 
-    @Test void rejectsFakeCuriosJarAndRequiresActualApiBytecode() throws IOException {
+    @Test
+    void rejectsFakeCuriosJarAndRequiresActualApiBytecode() throws IOException {
         Path fake = fakeJar("fake-curios.jar", toml("curios", "5.14.1+1.20.1", "[47,)"), false);
         assertThrows(IOException.class, () -> EmbeddedCurios.validateArchive(fake));
         Path properShape = temporary.resolve("curios-shape.jar");
@@ -91,7 +99,8 @@ class TargetJarsTest {
         assertDoesNotThrow(() -> EmbeddedCurios.validateArchive(properShape));
     }
 
-    @Test void bundledCitadelIsOnlyNeededForExactOriginalAlexForgeTargets() throws IOException {
+    @Test
+    void bundledCitadelIsOnlyNeededForExactOriginalAlexForgeTargets() throws IOException {
         Path mods = Files.createDirectories(temporary.resolve("mods"));
         assertFalse(TargetJars.needsEmbeddedCitadel());
         fakeJar("mods/alexscaves-port.jar", toml("alexscaves", "1.1.1", "[47,)"), true);
@@ -102,16 +111,24 @@ class TargetJarsTest {
         assertTrue(TargetJars.needsEmbeddedCitadel());
     }
 
-    @Test void warnsAboutFabricPortCollisionsRatherThanPretendTheyCanCoexist() {
-        assertThrows(TargetJars.FabricPortCollision.class, () ->
-                TargetJars.assertNoFabricPortCollision("alexscaves", id -> "citadel".equals(id)));
-        assertThrows(TargetJars.FabricPortCollision.class, () ->
-                TargetJars.assertNoFabricPortCollision("alexsmobs", id -> "alexsmobs".equals(id)));
+    @Test
+    void warnsAboutFabricPortCollisionsRatherThanPretendTheyCanCoexist() {
+        assertThrows(
+                TargetJars.FabricPortCollision.class,
+                () ->
+                        TargetJars.assertNoFabricPortCollision(
+                                "alexscaves", id -> "citadel".equals(id)));
+        assertThrows(
+                TargetJars.FabricPortCollision.class,
+                () ->
+                        TargetJars.assertNoFabricPortCollision(
+                                "alexsmobs", id -> "alexsmobs".equals(id)));
         assertDoesNotThrow(() -> TargetJars.assertNoFabricPortCollision("cataclysm", id -> true));
         assertDoesNotThrow(() -> TargetJars.assertNoFabricPortCollision("alexscaves", id -> false));
     }
 
-    @Test void fakeCitadelRejectedAndVerifiedByModIdVersionAndCoreClass() throws IOException {
+    @Test
+    void fakeCitadelRejectedAndVerifiedByModIdVersionAndCoreClass() throws IOException {
         Path missing = fakeJar("citadel-stub.jar", toml("citadel", "2.6.3", "[47,)"), false);
         assertThrows(IOException.class, () -> EmbeddedCitadel.validateArchive(missing));
         Path wrong = temporary.resolve("citadel-wrong.jar");
@@ -128,9 +145,14 @@ class TargetJarsTest {
         assertDoesNotThrow(() -> EmbeddedCitadel.validateArchive(valid));
     }
 
-    @Test void refusesMultiModForgeJar() throws IOException {
-        Path malformed = fakeJar("multi.jar", toml("cataclysm", "3.31", "[47,)") +
-                "\n[[mods]]\nmodId=\"evil\"\nversion=\"1\"", false);
+    @Test
+    void refusesMultiModForgeJar() throws IOException {
+        Path malformed =
+                fakeJar(
+                        "multi.jar",
+                        toml("cataclysm", "3.31", "[47,)")
+                                + "\n[[mods]]\nmodId=\"evil\"\nversion=\"1\"",
+                        false);
         Path selected = TargetJars.permitAndPrepare(malformed);
         try (JarFile zip = new JarFile(selected.toFile())) {
             assertNull(zip.getJarEntry("META-INF/mods.toml"));
@@ -138,8 +160,14 @@ class TargetJarsTest {
     }
 
     private String toml(String modId, String version, String loaderVersion) {
-        return "modLoader=\"javafml\"\nloaderVersion=\"" + loaderVersion + "\"\n" +
-                "[[mods]]\nmodId=\"" + modId + "\"\nversion=\"" + version + "\"\n";
+        return "modLoader=\"javafml\"\nloaderVersion=\""
+                + loaderVersion
+                + "\"\n"
+                + "[[mods]]\nmodId=\""
+                + modId
+                + "\"\nversion=\""
+                + version
+                + "\"\n";
     }
 
     private Path fakeJar(String name, String modsToml, boolean fabricMetadata) throws IOException {
@@ -157,8 +185,9 @@ class TargetJarsTest {
 
     private String readToml(Path input) throws IOException {
         try (JarFile jar = new JarFile(input.toFile())) {
-            return new String(jar.getInputStream(jar.getJarEntry("META-INF/mods.toml"))
-                    .readAllBytes(), StandardCharsets.UTF_8);
+            return new String(
+                    jar.getInputStream(jar.getJarEntry("META-INF/mods.toml")).readAllBytes(),
+                    StandardCharsets.UTF_8);
         }
     }
 
