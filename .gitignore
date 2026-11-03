@@ -1,7 +1,15 @@
 .gradle/
-build/
+/build/
 out/
 .idea/
 *.iml
 run/
 *.log
+/.gradle/
+/.idea/
+/out/
+/run/
+/runs/
+/common/build/
+/fabric/build/
+/forge/build/

@@ -28,18 +28,21 @@ import java.util.regex.Pattern;
  * Original third-party JARs are never modified.
  */
 public final class TargetJars {
-    private static final Map<String, String> TARGETS = Map.of(
-            "skarrier_mobs", "1.1.1",
-            "netherman", "1.1.4.12",
-            "cataclysm", "3.31",
-            "alexscaves", "2.0.2",
-            "alexsmobs", "1.22.9"
-    );
-    private static final Pattern MOD_SECTION = Pattern.compile("(?m)^\\s*\\[\\[mods]]\\s*(?:#.*)?$");
-    private static final Pattern FIELD = Pattern.compile("(?m)^\\s*([A-Za-z_]+)\\s*=\\s*\"([^\"]*)\"");
-    private static final Pattern AZAZEL_LOADER = Pattern.compile("(?m)^(\\s*loaderVersion\\s*=\\s*)\"Forge\"");
+    private static final Map<String, String> TARGETS =
+            Map.of(
+                    "skarrier_mobs", "1.1.1",
+                    "netherman", "1.1.4.12",
+                    "cataclysm", "3.31",
+                    "alexscaves", "2.0.2",
+                    "alexsmobs", "1.22.9");
+    private static final Pattern MOD_SECTION =
+            Pattern.compile("(?m)^\\s*\\[\\[mods]]\\s*(?:#.*)?$");
+    private static final Pattern FIELD =
+            Pattern.compile("(?m)^\\s*([A-Za-z_]+)\\s*=\\s*\"([^\"]*)\"");
+    private static final Pattern AZAZEL_LOADER =
+            Pattern.compile("(?m)^(\\s*loaderVersion\\s*=\\s*)\"Forge\"");
 
-    private TargetJars() { }
+    private TargetJars() {}
 
     public static Path permitAndPrepare(Path input) {
         Objects.requireNonNull(input, "input");
@@ -64,7 +67,11 @@ public final class TargetJars {
             ModInfo mod = parseSingleMod(toml);
             if (mod == null || !mod.version.equals(TARGETS.get(mod.id))) {
                 if (mod != null) {
-                    System.out.println("[Smooth Bridge] Ignoring unrelated Forge mod " + mod.id + " " + mod.version);
+                    System.out.println(
+                            "[Smooth Bridge] Ignoring unrelated Forge mod "
+                                    + mod.id
+                                    + " "
+                                    + mod.version);
                 }
                 return ignoredJar();
             }
@@ -79,7 +86,11 @@ public final class TargetJars {
             // user with mixed Forge/Fabric registry and unpredictable world corruption.
             throw conflict;
         } catch (Exception error) {
-            System.err.println("[Smooth Bridge] Skipping unreadable mod " + input.getFileName() + ": " + error);
+            System.err.println(
+                    "[Smooth Bridge] Skipping unreadable mod "
+                            + input.getFileName()
+                            + ": "
+                            + error);
             return ignoredJar();
         }
     }
@@ -108,7 +119,7 @@ public final class TargetJars {
         return id == null || version == null ? null : new ModInfo(id, version);
     }
 
-    record ModInfo(String id, String version) { }
+    record ModInfo(String id, String version) {}
 
     /** Only the two added gameplay targets depend on bundled Citadel. */
     public static boolean needsEmbeddedCitadel() {
@@ -134,17 +145,21 @@ public final class TargetJars {
                         continue;
                     }
                     ModInfo mod = parseSingleMod(toml);
-                    if (mod != null && ("alexscaves".equals(mod.id) || "alexsmobs".equals(mod.id))
+                    if (mod != null
+                            && ("alexscaves".equals(mod.id) || "alexsmobs".equals(mod.id))
                             && mod.version.equals(TARGETS.get(mod.id))) {
                         return true;
                     }
                 } catch (IOException unreadable) {
                     // A non-target corrupted/locked archive must not cause this scan to fail.
-                    System.err.println("[Smooth Bridge] Could not inspect potential Citadel consumer: " + file.getFileName());
+                    System.err.println(
+                            "[Smooth Bridge] Could not inspect potential Citadel consumer: "
+                                    + file.getFileName());
                 }
             }
         } catch (IOException e) {
-            throw new IllegalStateException("Smooth Bridge cannot scan mods/ for Citadel consumers", e);
+            throw new IllegalStateException(
+                    "Smooth Bridge cannot scan mods/ for Citadel consumers", e);
         }
         return false;
     }
@@ -160,11 +175,17 @@ public final class TargetJars {
         }
         for (String id : new String[] {forgeId, "citadel"}) {
             if (fabricLoaded.test(id)) {
-                throw new FabricPortCollision("Smooth Bridge cannot run Forge " + forgeId
-                        + " alongside the Fabric mod '" + id + "'. In a COPY of the instance,"
-                        + " disable the Fabric port of " + id + " and keep the Forge target JAR."
-                        + " Citadel Forge 2.6.3 is already embedded in Smooth Bridge."
-                        + " Existing saves should be backed up before switching loaders.");
+                throw new FabricPortCollision(
+                        "Smooth Bridge cannot run Forge "
+                                + forgeId
+                                + " alongside the Fabric mod '"
+                                + id
+                                + "'. In a COPY of the instance,"
+                                + " disable the Fabric port of "
+                                + id
+                                + " and keep the Forge target JAR."
+                                + " Citadel Forge 2.6.3 is already embedded in Smooth Bridge."
+                                + " Existing saves should be backed up before switching loaders.");
             }
         }
     }
@@ -178,12 +199,15 @@ public final class TargetJars {
             // Compile-time and fixture tests run without Fabric Loader.
             return false;
         } catch (ReflectiveOperationException brokenRuntime) {
-            throw new IllegalStateException("Could not check Fabric mod collision for " + id, brokenRuntime);
+            throw new IllegalStateException(
+                    "Could not check Fabric mod collision for " + id, brokenRuntime);
         }
     }
 
     static final class FabricPortCollision extends IllegalStateException {
-        FabricPortCollision(String explanation) { super(explanation); }
+        FabricPortCollision(String explanation) {
+            super(explanation);
+        }
     }
 
     private static synchronized Path ignoredJar() {
@@ -199,7 +223,8 @@ public final class TargetJars {
                 }
             }
             Files.createDirectories(destination.getParent());
-            Path temp = Files.createTempFile(destination.getParent(), "smoothbridge-empty-", ".jar");
+            Path temp =
+                    Files.createTempFile(destination.getParent(), "smoothbridge-empty-", ".jar");
             try {
                 try (JarOutputStream ignored = new JarOutputStream(Files.newOutputStream(temp))) {
                     // Valid empty JAR: Kilt's original discovery immediately returns no mods.
@@ -214,7 +239,8 @@ public final class TargetJars {
         }
     }
 
-    private static synchronized Path normalizedAzazelJar(Path original, String toml) throws IOException {
+    private static synchronized Path normalizedAzazelJar(Path original, String toml)
+            throws IOException {
         Matcher matcher = AZAZEL_LOADER.matcher(toml);
         if (!matcher.find()) {
             // Upstream Kilt already understands valid loaderVersion. Never overwrite originals.
@@ -243,7 +269,7 @@ public final class TargetJars {
         Path temp = dir.resolve(".netherman-" + UUID.randomUUID() + ".tmp");
         try {
             try (JarFile inJar = new JarFile(original.toFile());
-                 JarOutputStream out = new JarOutputStream(Files.newOutputStream(temp))) {
+                    JarOutputStream out = new JarOutputStream(Files.newOutputStream(temp))) {
                 var entries = inJar.entries();
                 while (entries.hasMoreElements()) {
                     JarEntry entry = entries.nextElement();
@@ -271,13 +297,15 @@ public final class TargetJars {
         } finally {
             Files.deleteIfExists(temp);
         }
-        System.out.println("[Smooth Bridge] Normalized Cult of Azazel Forge metadata in cache; original untouched");
+        System.out.println(
+                "[Smooth Bridge] Normalized Cult of Azazel Forge metadata in cache; original untouched");
         return output;
     }
 
     private static boolean isSignature(String path) {
         String name = path.toUpperCase(java.util.Locale.ROOT);
-        return name.startsWith("META-INF/") && (name.endsWith(".SF") || name.endsWith(".RSA") || name.endsWith(".DSA"));
+        return name.startsWith("META-INF/")
+                && (name.endsWith(".SF") || name.endsWith(".RSA") || name.endsWith(".DSA"));
     }
 
     static Path gameDir() {

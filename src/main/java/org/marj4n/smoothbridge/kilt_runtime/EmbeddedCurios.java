@@ -24,48 +24,60 @@ import java.util.jar.JarFile;
 public final class EmbeddedCurios {
     public static final String RESOURCE = "META-INF/smoothbridge/curios-forge-5.14.1+1.20.1.jar";
     public static final String DIGEST = "META-INF/smoothbridge/curios-forge-5.14.1+1.20.1.sha256";
-    private static final String REQUIRED_INTERFACE = "top/theillusivec4/curios/api/type/capability/ICurioItem.class";
+    private static final String REQUIRED_INTERFACE =
+            "top/theillusivec4/curios/api/type/capability/ICurioItem.class";
 
-    private EmbeddedCurios() { }
+    private EmbeddedCurios() {}
 
     public static List<?> extendBuiltIns(List<?> originalDefinitions, Object loader) {
         Objects.requireNonNull(originalDefinitions, "definitions");
         Objects.requireNonNull(loader, "loader");
         Path nestedJar = extract();
         try {
-            Method scanner = loader.getClass().getDeclaredMethod("loadModDefinitions", Path.class, List.class);
+            Method scanner =
+                    loader.getClass()
+                            .getDeclaredMethod("loadModDefinitions", Path.class, List.class);
             scanner.setAccessible(true);
             Object scanned = scanner.invoke(loader, nestedJar, null);
             if (!(scanned instanceof List<?> nestedDefinitions) || nestedDefinitions.size() != 1) {
-                throw new IllegalStateException("Embedded Curios must resolve to exactly one Forge mod");
+                throw new IllegalStateException(
+                        "Embedded Curios must resolve to exactly one Forge mod");
             }
             List<Object> merged = new ArrayList<>(originalDefinitions.size() + 1);
             merged.addAll(originalDefinitions);
             merged.addAll(nestedDefinitions);
-            System.out.println("[Smooth Bridge] Embedded Curios 5.14.1 registered through Forge discovery");
+            System.out.println(
+                    "[Smooth Bridge] Embedded Curios 5.14.1 registered through Forge discovery");
             return merged;
         } catch (NoSuchMethodException | IllegalAccessException e) {
-            throw new IllegalStateException("Kilt ABI changed; unable to register embedded Curios", e);
+            throw new IllegalStateException(
+                    "Kilt ABI changed; unable to register embedded Curios", e);
         } catch (InvocationTargetException e) {
-            throw new IllegalStateException("Kilt rejected embedded Curios during discovery", e.getCause());
+            throw new IllegalStateException(
+                    "Kilt rejected embedded Curios during discovery", e.getCause());
         }
     }
 
     public static synchronized Path extract() {
         try {
             byte[] jarBytes = resourceBytes(RESOURCE);
-            String expected = new String(resourceBytes(DIGEST), StandardCharsets.UTF_8)
-                    .trim().toLowerCase(Locale.ROOT);
+            String expected =
+                    new String(resourceBytes(DIGEST), StandardCharsets.UTF_8)
+                            .trim()
+                            .toLowerCase(Locale.ROOT);
             if (!expected.matches("[0-9a-f]{64}")) {
                 throw new IllegalStateException("Invalid embedded Curios checksum metadata");
             }
             if (!TargetJars.sha256(jarBytes).equals(expected)) {
                 throw new IllegalStateException("Embedded Curios checksum mismatch");
             }
-            Path directory = TargetJars.gameDir().resolve(".smoothbridge-cache").resolve("embedded");
+            Path directory =
+                    TargetJars.gameDir().resolve(".smoothbridge-cache").resolve("embedded");
             Files.createDirectories(directory);
-            Path output = directory.resolve("curios-5.14.1+1.20.1-" + expected.substring(0,24) + ".jar");
-            if (Files.isRegularFile(output) && expected.equals(TargetJars.sha256(Files.readAllBytes(output)))) {
+            Path output =
+                    directory.resolve("curios-5.14.1+1.20.1-" + expected.substring(0, 24) + ".jar");
+            if (Files.isRegularFile(output)
+                    && expected.equals(TargetJars.sha256(Files.readAllBytes(output)))) {
                 validateArchive(output);
                 return output;
             }
@@ -74,7 +86,11 @@ public final class EmbeddedCurios {
                 Files.write(temporary, jarBytes);
                 validateArchive(temporary);
                 try {
-                    Files.move(temporary, output, StandardCopyOption.REPLACE_EXISTING, StandardCopyOption.ATOMIC_MOVE);
+                    Files.move(
+                            temporary,
+                            output,
+                            StandardCopyOption.REPLACE_EXISTING,
+                            StandardCopyOption.ATOMIC_MOVE);
                 } catch (java.nio.file.AtomicMoveNotSupportedException notAtomic) {
                     Files.move(temporary, output, StandardCopyOption.REPLACE_EXISTING);
                 }
@@ -91,7 +107,8 @@ public final class EmbeddedCurios {
     static void validateArchive(Path file) throws IOException {
         try (JarFile jar = new JarFile(file.toFile())) {
             if (jar.getJarEntry(REQUIRED_INTERFACE) == null) {
-                throw new IOException("Curios JAR missing ICurioItem.class (wrong classifier or version)");
+                throw new IOException(
+                        "Curios JAR missing ICurioItem.class (wrong classifier or version)");
             }
             var metadata = jar.getJarEntry("META-INF/mods.toml");
             if (metadata == null) {
