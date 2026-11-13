@@ -28,4 +28,4 @@ Third-party gameplay mod JARs are not redistributed. Root license texts and `lic
 
 ## Permission enquiries
 
-For support or permission enquiries concerning separately owned material, contact Marj4n through [nivekts.vercel.app](https://nivekts.vercel.app/). This contact policy does not add an approval requirement to rights granted by the applicable LGPL licenses. The bridge and bundled components retain the licenses and source/replacement rights described above; earlier valid grants and GitHub platform rights remain unaffected.
+For support or permission enquiries concerning separately owned material, contact Marj4n through [marj4n.vercel.app](https://marj4n.vercel.app/). This contact policy does not add an approval requirement to rights granted by the applicable LGPL licenses. The bridge and bundled components retain the licenses and source/replacement rights described above; earlier valid grants and GitHub platform rights remain unaffected.
